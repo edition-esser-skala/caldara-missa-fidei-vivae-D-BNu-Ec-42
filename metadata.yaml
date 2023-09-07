@@ -1,0 +1,20 @@
+composer:
+  last: Caldara
+  first: Antonio
+title: Missa Fidei Vivæ
+subtitle: Kyrie & Gloria
+genre: mass
+scoring: S, A, T, B (solo), S, A, T, B (coro), 2 clno (C), 2 trb, timp (C–G), 2 vl, b, org
+license: cc-by-sa-4.0
+sources:
+  B1:
+    siglum: D-BNu
+    shelfmark: Ec 42
+    date: 1780–1820
+    rism: 450063835
+    url: https://nbn-resolving.de/urn:nbn:de:hbz:5:1-237559
+    license: public domain
+    principal: true
+imslp:
+parts:
+  ottoni: Clarino I, II in C\\Timpani in C–G
