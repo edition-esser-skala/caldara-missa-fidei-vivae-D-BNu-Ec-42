@@ -9,6 +9,7 @@
 tempoKyrie = \tempoMarkup "Largo"
   tempoKyrieB = \tempoMarkup "Allegro"
   tempoKyrieC = \tempoMarkup "Allegro"
+tempoGloria = \tempoMarkup "Allegro"
 
 
 \include "notes/clno1.ly"

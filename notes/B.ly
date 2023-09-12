@@ -165,3 +165,50 @@ KyrieBassoLyrics = \lyricmode {
   e e -- lei --
   son. %174 finis
 }
+
+GloriaBasso = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \autoBeamOff \tempoGloria
+    \mvTr c'2\fE^\tuttiE c
+    c4 c,8 c e4 g
+    c,8 g' c g c g c g
+    c r a r g4 r
+    g2 g %5
+    g4 g,8 g h4 d
+    g,8 g' g g f! f f f
+    e e a a, e'4 r
+    r c8 a d d f d
+    a'4 c8[ a] f8.[ e16] d4 %10
+    e1
+    a,8 a c a r d f d
+    r g! h g c, c e c
+    g'4 r a2
+    g f8 f f f %15
+    f4 e8[ d16 c] g'2
+    c,4 r8 c e c r4
+    r8 c e g c,4 r
+    R1\fermata \bar "||" %19 finis
+  }
+}
+
+GloriaBassoLyrics = \lyricmode {
+  Et in
+  ter -- ra, in ter -- ra
+  pax, in ter -- ra pax, in ter -- ra
+  pax, pax, pax,
+  et in %5
+  ter -- ra, in ter -- ra
+  pax, in ter -- ra pax, in ter -- ra
+  pax ho -- mi -- ni -- bus
+  bo -- nae, bo -- nae vo -- lun --
+  ta -- _ _ _ %10
+  _
+  tis, in ter -- ra, in ter -- ra,
+  in ter -- ra pax ho -- mi -- ni --
+  bus bo --
+  nae, bo -- nae vo -- lun -- %15
+  ta -- _ _
+  tis, in ter -- ra,
+  in ter -- ra pax. %18 finis
+}

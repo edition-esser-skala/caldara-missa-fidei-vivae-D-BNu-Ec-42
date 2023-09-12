@@ -366,3 +366,51 @@ KyrieBassFigures = \figuremode {
   \bo <[5 3]>8 \bc <[6 4]>4. <4>4 <3>
   r1 %174 finis
 }
+
+GloriaOrgano = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \tempoGloria
+    \mvTr c'8\fE-\tuttiE c, r c' c c, r c'
+    c c, r c e4 g
+    c,8 g c g c g c g
+    c r a r g4 r
+    g'8 g, r g' g g, r g' %5
+    g g, r g h4 d
+    g,8 g' g g f! f f f
+    e e a a, e' e e e
+    a, a c a d d f d
+    a a c a f'4 d %10
+    e1
+    a,8 a c a d d f d
+    r g! h g c, c e c
+    g' g h g a a, a a'
+    g g, g g' f f, f f' %15
+    f4 e8 d16 c g'8 f g g,
+    c4 r8 c e c r4
+    r8 c e g c,4 r
+    r16 c d e f g a h c8 c, r4\fermata \bar "||" %19 finis
+  }
+}
+
+GloriaBassFigures = \figuremode {
+  r1
+  r2 <6>
+  r1
+  r4 <6\\>2.
+  r1 %5
+  r2 <6>4 <_+>
+  r2 <2>
+  <_+> q
+  r4 <6> <9> <6>
+  <4> <6> <6 5> <6> %10
+  <7 _+> <6 4> <5 \t> <\t _+>
+  r <6>2 <[6]>4
+  r <6>2 q4
+  r q <7> <6>
+  <7> <6> <7> <6> %15
+  <4 2> <6> <4> <3>
+  r2 <6>
+  r4 q2.
+  <\l>2 \once \bassFigureExtendersOn q4 \bassFigureExtendersOff r %19 finis
+}

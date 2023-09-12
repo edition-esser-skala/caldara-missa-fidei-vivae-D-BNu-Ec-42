@@ -75,77 +75,26 @@ KyrieTromboneI = {
   }
 }
 
-KyrieAltoLyrics = \lyricmode {
-  Ky -- %1
-  ri -- e e -- lei -- _
-  _
-  son, Ky -- ri -- e __
-  e -- _ %5
-  _ _
-  lei -- son.
-
-  Ky -- ri -- e e -- lei --
-  son, %10
-  Ky -- ri -- e e -- lei --
-  son, e -- lei -- son, e --
-  lei -- son,
-  e -- _
-  _ _ _ %15
-  _ _ _
-  _ _ _
-  _ lei --
-  son.
-
-  Ky -- ri -- e e -- lei -- %28
-  son, e -- le -- i --
-  son, Ky -- ri -- e, %30
-  Ky -- ri -- e,
-  Ky -- ri -- e
-  e -- _ _
-  lei -- son, e -- lei --
-  son, %35
-  e -- lei -- son, e --
-  lei -- son, e -- lei --
-  son.
-
-  Ky -- ri -- %135
-  e e --
-  lei -- _
-  _ son, e --
-  lei -- son, e --
-  _ _ _ _ %140
-  _ _ lei --
-  son,
-  e -- _ _
-  _ _ lei --
-  _ son, %145
-  Ky -- ri --
-  e e --
-  _ _ _
-  lei --
-  son, %150
-  e -- _ _
-  _ _ _
-  _ lei -- son, Ky --
-  ri -- e
-  e -- _ _ _ %155
-  _ _ _
-  _ lei --
-  son, e --
-  lei -- son, e --
-  _ lei -- %160
-  son, e -- lei --
-  son, e -- _
-  _ _ _ lei --
-  son, Ky --
-  ri -- e %165
-  e --
-  lei --
-  son, e -- _ _
-  _ _
-  _ _ _ %170
-  lei -- son, e --
-  le -- i -- son, Ky -- ri --
-  e e -- lei --
-  son. %174 finis
+GloriaTromboneI = {
+  \relative c' {
+    \clef alto
+    \key c \major \time 4/4 \tempoGloria
+    R1*2
+    r8 d\fE e d e d e d
+    e r fis r g4 r
+    R1*2 %6
+    r8 g g g g g g g
+    gis gis a8. a16 gis4 r
+    a2 a
+    a a4 f8 f %10
+    e1
+    e4 r f r
+    d r e8 e e8. e16
+    d4 g2 f4~
+    f e4. e8 d c %15
+    h4 c2 h4
+    c8 e g e r g g g
+    g4 r g r
+    R1\fermata \bar "||" %19 finis
+  }
 }

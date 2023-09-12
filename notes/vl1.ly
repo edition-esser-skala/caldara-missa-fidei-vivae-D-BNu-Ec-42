@@ -145,3 +145,29 @@ KyrieViolinoI = {
     e1\fermata \bar "|." %174 finis
   }
 }
+
+GloriaViolinoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoGloria
+    r8 g'\fE a g r g a g
+    r e' f e r c g, h'
+    c, d' e16 c d g e c d g e c d g
+    e8 c r fis g16 h, a g fis e d c
+    h8 d e d r h' c h %5
+    r d e d r g d, fis'
+    g,, h' h16( g) g( h) h( g) g( h) h( g) g( h)
+    h( gis) gis( h) c( a) a( c) h( gis) gis( h) \slurDashed h( e) e( gis) \slurSolid
+    a8 a, e'4. a8 d,4~
+    d8 c16 h c4. c8 h a %10
+    gis gis a a a a gis gis
+    a4 r8 e' f f, r f'
+    d d, r d' e e, r e'
+    d4 r c4. a'8
+    h,4. g'8 a,4. f'8 %15
+    g, d' e e d d d d
+    c4 r8 g c g r4
+    r8 c, e g c16 e d c h a g f
+    e4 r r2\fermata \bar "||" %19 finis
+  }
+}
