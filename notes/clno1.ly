@@ -131,3 +131,41 @@ GratiasClarinoI = {
     c\fermata \bar "||" %180 finis
   }
 }
+
+DomineFiliClarinoSolo = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoDomineFili
+      \set Score.currentBarNumber = #248
+    R1*32 %279
+    r2 r4 r8 g''\fE %280
+    g32( f e16) e32( d c16) c e d c a'32( g f16) f32( e d16) d f e d
+    h'32( a g16) g32( f e16) e g f e c'32( h a16) a32( g f16) f a g f
+    d'32( c h16) h32( a g16) g h a g c8 c, r g'
+    c,16 e32( d) c16 c c e32( d) c16 c d f32( e) d16 d d f32( e) d16 e32( f)
+    e16 \slurDashed g32( f) e16 d32( c) \slurSolid d4\trill c r %285
+    r2 r8 g'\pE g32( f e16) e32( d c16)
+    c4 r g' a8 h
+    a h16 a g8 a16 g fis4 r16 d e fis
+    g4 r16 e fis g a4 r
+    R1 %290
+    r8 g\fE g32( fis? e16) e32( d c16) a'32( g fis16) fis32( e d16) h'32( a g16) g32( fis e16)
+    c'32( h a16) a32( g fis16) d'32( c h16) h32( a g16) c16.\trill h32 c8 r16 c h16. a32
+    h16 d32( c) h16 a32( g) a4\trill g r
+    R1
+    e8.\pE f16 e16. f32 e16. d32 c4 r %295
+    e8. f16 e16. f32 e16. d32 c4 r
+    r4 f16.\trill e32 f8 r4 e16.\trill d32 e8
+    r4 d16.\trill c32 d8 r2
+    R1
+    c16\fE e32( d) c16 c c e32( d) c16 c d f32( e) d16 d d f32( e) d16 e32( f) %300
+    \slurDashed e16 g32( f) e16 f32( g) a( g f16) f32( e d16) d8 g, r4 \slurSolid
+    R1*4 %305
+    c4\fE f8 e d4~\trill d16. d32 e16. f32
+    e4~\trill e16. e32 fis16. g32 fis4~\trill fis16. fis32 g16. a32
+    g4~\trill g16. g32 a16. h32 a4~\trill a16. a32 h16. c32
+    h4~\trillE h16. h32 c16. d32 c16 e32( d) c16 h32( a) h16 d32( c) h16 a32( g)
+    a16 c32( h) a16 g32( f) g16 h32( a) g16 f32( e) f16 a32( g) f16 e32( d) e16 g32( f) e16 d32( c) %310
+    d2\trill c4 r\fermata \bar "||" %311 finis
+  }
+}

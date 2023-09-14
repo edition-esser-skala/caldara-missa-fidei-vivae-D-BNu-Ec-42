@@ -317,3 +317,40 @@ GratiasViolinoII = {
     g\fermata \bar "||" %180 finis
   }
 }
+
+DomineFiliViolinoII = {
+  \relative c' {
+    \clef treble
+    \key d \dorian \time 4/4 \tempoDomineFili
+      \set Score.currentBarNumber = #248
+    R1*2 %249
+    r2 r8 a'\fE a a %250
+    a16 g f e f d b'8~ b16 a g f g e c'8~
+    c16 b a g a f d'8~ d16 c b a b g e'8~
+    e16 d cis h cis a f'8~ f e16 d \appoggiatura d8 cis4\trill
+    d r r2
+    R1*2 %256
+    r8 d\fE d d d16 c b a b g e'8
+    r2 r4 r8 a,\p
+    b16.\trill a32 b8 r b c16.\trill b32 c8 r c
+    d16.\trill c32 d8 r4 r2 %260
+    R1
+    r4 r8 c,\f d16.\trill c32 d8 r d
+    e!16.\trill d32 e8 r e f16.\trill e32 f8 r f
+    g16.\trill f32 g8 r g' a g16 f \appoggiatura f8 e4\trill
+    f r r2 %265
+    R1
+    r8 g\pE g g g16 f es d es c c'8
+    r f, f16 es d c d b g'8 r4
+    r r8 d d d d16 c b a
+    b g d'8 r d\fE c c c16 b a g %270
+    a f f'8 r4 r2
+    R1*4 %275
+    r8 a,\fE a a a16 g f e f d b'8~
+    b16 a g f g e c'8~ c16 b a g a f d'8~
+    d16 c b a b g e'8~ e16 d cis h cis a f'8~
+    f e16 d \appoggiatura d8 cis4\trill d r
+    R1*31 %310
+    R1\fermata \bar "||" %311 finis
+  }
+}

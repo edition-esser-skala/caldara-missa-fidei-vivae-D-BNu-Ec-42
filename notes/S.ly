@@ -541,10 +541,124 @@ GratiasSopranoLyrics = \lyricmode {
   am. %180 finis
 }
 
+DomineFiliSoprano = {
+  \relative c' {
+    \clef "treble_8"
+    \key d \dorian \time 4/4 \autoBeamOff \tempoDomineFili
+      \set Score.currentBarNumber = #248
+    \mvTr d4.\pE^\soloE e16[ f] e8. a,16 a4
+    a8 g16([ f)] g8 a f8. e16 d4
+    b'8 a d e cis8.([ h?16)] a4 %250
+    R1*3
+    d4. e16[ f] e8. a,16 a4
+    a8 g16([ f)] g8 a f8. e16 d4 %255
+    b'8 a d e cis8.([ h?16)] a4
+    R1
+    r4 c!8 c c16[ b a g] a[ f d'8]~
+    d16[ c b a] b[ g e'8]~ e16[ d c b] c[ a f'8]~
+    f16[ es d c] d[ b] d4 d16 c b8 a %260
+    g d' c4. b16([ a)] g4\trill
+    f r r2
+    R1*2
+    c'4 c8 b a8.([ g16)] f4 %265
+    d'8 es d c b8. a16 a4
+    r d8 d es4~ es16[ f es d]
+    c[ b a8]~ a16[ c b a] b8 b16 c d8 es
+    fis,4 g d'8 c16([ b)] a4
+    g r r2 %270
+    r4 f'8 f e!([ f)] e d
+    cis4. h!16[ a] d8[ c? b a]
+    b4. a16[ g] c8[ b a g]
+    a4. g16[ f] b8[ a g fis]
+    g[ b es d] cis[ h16 a] d8 e %275
+    e2 d4 r
+    R1*2
+    r2 \clef treble d'4. e16 f
+    h,!8 a g f' e8.([ d16)] c4 %280
+    R1*4
+    r2 g4. a16 h %285
+    c8 c d e16([ f)] e([ d)] c8 r4
+    c d8 e d[ e16 d] c8[ h]
+    c[ d16 c] h8[ c16 h] a[ a h c] d4
+    r16 h[ c d] e4~ e16[ d c h] c[ h a g]
+    fis8[ e16 d] d'4~ d8[ c16 h] a4\trill %290
+    g r r2
+    R1
+    r2 d'4. e16[ f!]
+    e8.[ f16] e[ f e d] c8 h16 a gis8([ a)]
+    h4 r a8 h16([ c)] h8 a %295
+    gis16.([ fis32)] e8 r4 c' d8 e
+    f16.[ e32 f8] r16 d[ c h] e16.[ d32 e8] r16 c[ h a]
+    d16.[ c32 d8] r16 h[ a gis] a[ c h a] h[ d c h]
+    c[ e d c] d[ f e d] e8[ d16 c] h4
+    a r r2 %300
+    r g4 c8 b
+    a4~ a16.[ a32 h16 c] h4~ h16.[ h32 c16 d]
+    c4~ c16.[ c32 d16 e] d4~ d16.[ d32 e16 f]
+    e16[ g32( f) e16 d32( c)] d16[ f32( e) d16 c32( h)] c16[ e32( d) c16 h32( a)] h16[ d32( c) h16 a32( g)]
+    c2~ c16[ h c d] d4\trill %305
+    c2 r
+    R1*4 \noBreak %310
+    R1\fermata \bar "||" %311 finis
+  }
+}
+
+DomineFiliSopranoLyrics = \lyricmode {
+  Do -- _ _ mi -- ne %248
+  Fi -- li __ u -- ni -- ge -- ni -- te,
+  Je -- su, Je -- su Chri -- ste, %250
+
+  Do -- _ _ mi -- ne %254
+  Fi -- li __ u -- ni -- ge -- ni -- te, %255
+  Je -- su, Je -- su Chri -- ste,
+
+  u -- ni -- ge -- _
+  _ _
+  _ _ ni -- te, Je -- su %260
+  Chri -- ste, Je -- su __ Chri --
+  ste.
+
+  Do -- mi -- ne Fi -- li, %265
+  Fi -- li u -- ni -- ge -- ni -- te,
+  u -- ni -- ge --
+  _ _ ni -- te, Je -- su
+  Chri -- ste, Je -- su __ Chri --
+  ste, %270
+  u -- ni -- ge -- ni -- te,
+  Je -- _ _
+  _ _ _
+  _ _ _
+  _ _ _ su %275
+  Chri -- ste.
+
+  Do -- mi -- ne %279
+  De -- us, A -- gnus De -- i, %280
+
+  Do -- mi -- ne %285
+  De -- us, A -- gnus De -- i,
+  Fi -- li -- us Pa -- _
+  _ _ _ _
+  _ _ _
+  _ _ _ %290
+  tris.
+
+  Do -- _ %293
+  _ _ _ mi -- ne De --
+  us, De -- us, __ A -- gnus %295
+  De -- i, Fi -- li -- us
+  Pa -- _ _ _
+  _ _ _ _
+  _ _ _ _
+  tris, %300
+  Fi -- li -- us
+  Pa -- _
+  _ _
+  _ _ _ _
+  _ _ %305
+  tris. %306 finis
+}
 
 
-% Do -- mi -- ne Fi -- li u -- ni -- ge -- ni -- te, Je -- su Chri -- ste,
-% Do -- mi -- ne De -- us, A -- gnus De -- i, Fi -- li -- us Pa -- tris.
 % Qui tol -- lis pec -- ca -- ta mun -- di:
 % Mi -- se -- re -- re no -- bis.
 % Qui tol -- lis pec -- ca -- ta mun -- di:
