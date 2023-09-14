@@ -179,3 +179,69 @@ GloriaViolinoII = {
     c4 r r2\fermata \bar "||" %19 finis
   }
 }
+
+LaudamusViolinoII = {
+  \relative c' {
+    \clef treble
+    \key a \minor \time 3/4 \tempoLaudamus
+      \set Score.currentBarNumber = #20
+    r8 e'\fE c( a) h( gis)
+    a[ e a c] e d16( c)
+    h8[ e, h' d] f \once \slurDashed e16( d)
+    c16( h) a8 \slurDashed h( g!) a( fis) \slurSolid
+    \appoggiatura fis g4. e'8 e e
+    e4\trill dis8 fis a \once \slurDashed g16( fis) %25
+    e8 dis e fis dis4
+    e8 gis, a h \once \slurDashed c!( h)
+    r a h c d( c)
+    r h c d e( d)
+    r a'4 f d8~ %30
+    d b4 d, c8
+    h!4 e r8 gis
+    a4 a4. gis8
+    a4 r r
+    R2.*6 %40
+    r8 h cis dis e( dis)
+    R2.*4 %45
+    r8 a h c d( c)
+    R2.*4 %50
+    r8 h c d e( d)
+    c4 r r
+    R2.*8 %60
+    r8 c h( g) a( fis)
+    g[ d g h] d \slurDashed c16( h)
+    a8[ d, fis a] c h16( a) \slurSolid
+    h8 h c d e( d)
+    r c d e f( e) %65
+    d4 h g
+    e' c a8 d
+    h4 c16 g c4 h8
+    c4 r r
+    R2. %70
+    r8 h c d e( d)
+    R2.*6 %77
+    r8 gis, a h c( h)
+    r a h c d( c)
+    r gis a h c( h) %80
+    R2.*9 %89
+    r4 r r8 e %90
+    c( a) h( gis) a4\trill
+    gis r r
+    R2.*3 %95
+    r8 e' c( a) h( gis)
+    a[ e a c] e d16( c)
+    h8[ e, h' d] f e16( d)
+    \slurDashed c( h) a8 h( g!) a( fis) \slurSolid
+    \appoggiatura fis g4. e'8 e e %100
+    e4\trillE dis8 fis a g16 fis
+    e8 dis e fis dis4
+    e8 gis, a h c!( h)
+    r a h c d( c)
+    r h c d e( d) %105
+    r a'4 f d8~
+    d b4 d, c8
+    h!4 e r8 gis
+    a4 a4. gis8
+    a2 r4\fermata \bar "||" %110 finis
+  }
+}

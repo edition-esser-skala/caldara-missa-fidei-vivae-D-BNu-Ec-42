@@ -212,3 +212,113 @@ GloriaBassoLyrics = \lyricmode {
   tis, in ter -- ra,
   in ter -- ra pax. %18 finis
 }
+
+LaudamusBasso = {
+  \relative c {
+    \clef bass
+    \key a \minor \time 3/4 \autoBeamOff \tempoLaudamus
+      \set Score.currentBarNumber = #20
+    R2.*17 %36
+    r8 \mvTr a'\pE^\soloE g![ e fis dis]
+    e[ h e g] h[ a16 g]
+    fis8[ h, fis' a] c[ h16 a]
+    g8[ fis] e fis g a %40
+    h4 r r
+    g g2
+    g8 fis g2
+    r4 h4. c8
+    a4 g8([ fis)] g([ a)] %45
+    fis2 r4
+    r8 e([ fis8.)] g16 a8[ g]
+    r fis g8.[ a16] h8[( a])
+    r g a8.[ h16] c8([ h)]
+    r a[ h c d] c %50
+    h4 r r
+    R2.
+    r8 f a([ g)] f([ e)]
+    d f4 e8 d[ e16 f]
+    g8[ d] g4. f8 %55
+    e[ g16 f] e8[ d] c[ d16 e]
+    f8[ d] g4. g,8
+    c4 r r
+    R2.*10 %68
+    r8 g' e([ c)] d([ h)]
+    c4 r r %70
+    R2.*2
+    r4 f8([ g)] a([ f)]
+    d8. d16 d4 r
+    r g8([ a)] h([ g)] %75
+    e4 e a8 g
+    f([ e] dis4.) e8
+    e2 r4
+    R2.*3 %81
+    a4 a8([ g!)] f([ e)]
+    d2.~
+    d8[ e16 fis] gis8[ a h d,]
+    c4. h8 cis[ h16 a] %85
+    d4. cis8 dis[ cis16 h]
+    e4. e8 e8.[\trill dis?32 e]
+    fis4. fis8 fis8.[\trill e32 fis]
+    gis4. gis8 gis8.[\trill fis32 gis]
+    a4 a, r %90
+    R2.
+    e'4 c a
+    a' f d
+    d c r8 gis'
+    a f d4 e %95
+    a,2 r4
+    R2.*13 %109
+    R2.\fermata \bar "||" %110 finis
+  }
+}
+
+LaudamusBassoLyrics = \lyricmode {
+  Lau -- da -- %37
+  _ _
+  _ _
+  _ mus, lau -- da -- mus %40
+  te,
+  be -- ne --
+  di -- ci -- mus,
+  be -- ne --
+  di -- ci -- mus %45
+  te,
+  ad -- o -- ra --
+  _ _ _
+  _ _ _
+  _ mus %50
+  te,
+
+  glo -- ri -- fi --
+  ca -- _ _ _
+  _ _ _ %55
+  _ _ _
+  _ _ mus
+  te.
+
+  Lau -- da -- mus %69
+  te, %70
+
+  be -- ne -- %73
+  di -- ci -- mus,
+  ad -- o -- %75
+  ra -- mus, ad -- o --
+  ra -- mus
+  te,
+
+  glo -- ri -- fi -- %82
+  ca --
+  _
+  _ _ _ %85
+  _ _ _
+  _ _ _
+  _ _ _
+  _ _ _
+  _ mus, %90
+
+  ad -- o -- ra --
+  mus, ad -- o --
+  ra -- mus, glo --
+  ri -- fi -- ca -- mus %95
+  te. %96 finis
+}
