@@ -658,13 +658,98 @@ DomineFiliSopranoLyrics = \lyricmode {
   tris. %306 finis
 }
 
+QuiTollisSoprano = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \autoBeamOff \tempoQuiTollis
+      \set Score.currentBarNumber = #312
+    r4 \mvTr c'\fE^\tuttiE c2
+    h r8 h h h
+    h([ a16 gis)] a8 e' f4( e)
+    e8([ d16 c)] d4 e2 %315
+    h8([ cis)] cis([ d)] d4 c8([ h)]
+    c4 cis d e8([ fis)]
+    e2 e
+    r4 e2 d4
+    d8([ c h a] g4) g %320
+    r h2 a4
+    ais4. ais8 h2~
+    h1 \noBreak
+    h\fermata \bar "||"
+    \tempoQuiTollisB R1*16 \noBreak %340
+    R1\fermata \bar "||"
+    \tempoQuiSedes R1*3 %344
+    \mvTr g2\fE^\tuttiE a %345
+    h8 h c4. c8 h4
+    c8([ d e f] g4) g, \noBreak
+    R1\fermata \bar "||"
+    \time 3/2 \newSpacingSection \tempoMiserere r2 c c \noBreak
+    a! g r %350
+    r b b
+    c c r
+    r as as
+    f g r
+    es( g) b %355
+    es1.
+    f1 es2
+    c1 d!2
+    d1 d2
+    r c c %360
+    c1.
+    h!\fermata
+    r2 c c
+    des( c) h!
+    c1.~ %365
+    c
+    h!1 c2~
+    c h!1
+    c1.\fermata \bar "||" %369 finis
+  }
+}
 
-% Qui tol -- lis pec -- ca -- ta mun -- di:
-% Mi -- se -- re -- re no -- bis.
-% Qui tol -- lis pec -- ca -- ta mun -- di:
-% Su -- sci -- pe de -- pre -- ca -- ti -- o -- nem no -- stram.
-% Qui se -- des ad dex -- te -- ram Pa -- tris:
-% Mi -- se -- re -- re no -- bis.
+QuiTollisSopranoLyrics = \lyricmode {
+  Qui tol -- %312
+  lis pec -- ca -- ta
+  mun -- di, pec -- ca --
+  ta __ mun -- di: %315
+  Mi -- se -- re -- re, __
+  mi -- se -- re -- re __
+  no -- bis,
+  mi -- se --
+  re -- re, %320
+  mi -- se --
+  re -- re no --
+
+  bis.
+
+  Qui se -- %345
+  des ad dex -- te -- ram
+  Pa -- tris:
+
+  Mi -- se --
+  re -- re, %350
+  mi -- se --
+  re -- re,
+  mi -- se --
+  re -- re,
+  mi -- se -- %355
+  re --
+  _ re,
+  mi -- se --
+  re -- re,
+  mi -- se -- %360
+  re --
+  re,
+  mi -- se --
+  re -- re
+  no -- %365
+
+  _ _
+  _
+  bis. %369 finis
+}
+
+
 % Quo -- ni -- am tu so -- lus san -- ctus, tu so -- lus Do -- mi -- nus,
 % tu so -- lus al -- tis -- si -- mus, Je -- su Chri -- ste.
 % Cum San -- cto Spi -- ri -- tu in glo -- ri -- a De -- i Pa -- tris, a -- men.

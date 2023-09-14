@@ -423,3 +423,97 @@ GratiasTenoreLyrics = \lyricmode {
   tu --
   am. %180 finis
 }
+
+QuiTollisTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \major \time 4/4 \autoBeamOff \tempoQuiTollis
+      \set Score.currentBarNumber = #312
+    r4 \mvTr e\fE^\tuttiE f2
+    d r8 d d d
+    d([ c16 h)] c4 r8 a h h
+    c4( h8[ a)] h2 %315
+    R1
+    e4 e8([ d)] d4 c!
+    h( c8[ h16 a)] h2
+    a4. a8 a8.([ g!16)] f4
+    r d'2 c4~ %320
+    c h e,2
+    e4. e8 fis4 g
+    fis1 \noBreak
+    gis\fermata \bar "||"
+    \tempoQuiTollisB R1*16 \noBreak %340
+    R1\fermata \bar "||"
+    \tempoQuiSedes R1 \noBreak
+    \mvTr g2\fE^\tuttiE a
+    h8 h c4. c8 h4
+    c e8[ d] c[ h] a[ h16 c] %345
+    d4 e f! d
+    e8[ d] c2 h4 \noBreak
+    R1\fermata \bar "||"
+    \time 3/2 \newSpacingSection \tempoMiserere r2 es es \noBreak
+    es d r %350
+    r d d
+    c c r
+    r c c
+    b b r
+    R1. %355
+    es2( c) as
+    f as c
+    f1.~
+    f1 f2
+    r es es %360
+    es1.
+    d\fermata
+    r2 es es
+    f( es) d!
+    es1.~ %365
+    es~
+    es
+    d
+    e!\fermata \bar "||" %369 finis
+  }
+}
+
+QuiTollisTenoreLyrics = \lyricmode {
+  Qui tol -- %312
+  lis pec -- ca -- ta
+  mun -- di, pec -- ca -- ta
+  mun -- di: %315
+
+  Mi -- se -- re -- re
+  no -- bis,
+  mi -- se -- re -- re,
+  mi -- se -- %320
+  re -- re,
+  mi -- se -- re -- re,
+  no --
+  bis.
+
+  Qui se -- %343
+  des ad dex -- te -- ram
+  Pa -- _ _ _ %345
+  _ _ _ _
+  _ _ tris:
+
+  Mi -- se --
+  re -- re, %350
+  mi -- se --
+  re -- re,
+  mi -- se --
+  re -- re,
+  %355
+  mi -- se --
+  re -- _ _
+  _
+  re,
+  mi -- se -- %360
+  re --
+  re,
+  mi -- se --
+  re -- re
+  no -- %365
+
+  _ %368
+  bis. %369 finis
+}

@@ -127,3 +127,23 @@ GratiasClarinoII = {
     e\fermata \bar "|| " %180 finis
   }
 }
+
+QuiTollisClarinoII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoQuiTollis
+      \set Score.currentBarNumber = #312
+    R1*12 \noBreak %323
+    R1\fermata \bar "||"
+    \tempoQuiTollisB R1*16 \noBreak %340
+    R1\fermata \bar "||"
+    \tempoQuiSedes R1*4 %345
+    r2 r4 d'\fE
+    e e2 d4 \noBreak
+    R1\fermata \bar "||"
+    \time 3/2 \newSpacingSection \tempoMiserere R1.*18 %366
+    g,2 g c
+    d d1
+    c1.\fermata \bar "||" %369 finis
+  }
+}

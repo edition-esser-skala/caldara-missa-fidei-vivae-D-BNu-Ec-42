@@ -354,3 +354,66 @@ DomineFiliViolinoII = {
     R1\fermata \bar "||" %311 finis
   }
 }
+
+QuiTollisViolinoII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoQuiTollis
+      \set Score.currentBarNumber = #312
+    r4 a'\fE a2
+    f r8 f f f
+    e4 e r8 c16 d e8 f16 g
+    a2 gis %315
+    gis8 a a h h4 a8 gis
+    a1
+    gis4 a2 gis4
+    g4. g8 f8. g16 a4~
+    a g8 f e2~ %320
+    e4 d c2
+    e4. e8 dis4 e~
+    e dis8 cis dis2 \noBreak
+    e1\fermata \bar "||"
+    \tempoQuiTollisB R1*2 %326
+    r4 e'~\pE e8 d16 c d8 c
+    h4 r r h~
+    h8 a16 gis a8 g? fis4 fis'~
+    fis8 e16 dis e8 e e dis r4 %330
+    r e~ e8 d16 c d8 c
+    h4. a16 g a2
+    h8 g4 fis8 g4 r
+    r c~ c8 h16 a h8 a
+    g4 h~ h8 a16 g a8 g %335
+    fis4 r dis r
+    e r h r
+    r8 g' a fis e e e e
+    e e e e e e dis dis
+    e c h a g c h a \noBreak %340
+    g1\fermata \bar "||"
+    \tempoQuiSedes R1*3
+    r4 g'2\fE fis4 %345
+    g4. g'8 f!4 g8 f
+    e d c2 h4 \noBreak
+    R1\fermata \bar "||"
+    \time 3/2 \newSpacingSection \tempoMiserere r2 es es \noBreak
+    es d r %350
+    r b b
+    c c, r
+    as' c c
+    b1 r2
+    R1. %355
+    g'2 es c
+    as1 r2
+    c as f
+    d'1.\trill
+    c2-! es,-! es-! %360
+    es-! es-! es-!
+    d1.\trill\fermata
+    r2 es es
+    f( es) d
+    \parOn es-\parenthesize-! es-! es-!
+    es-! es-! es-!
+    es-! es-! \parOff es-\parenthesize-!
+    d d d
+    e!1.\fermata \bar "||"
+  }
+}

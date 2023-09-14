@@ -398,3 +398,92 @@ DomineDeusAltoLyrics = \lyricmode {
   o -- mni -- po --
   tens. %228 finis
 }
+
+QuiTollisAlto = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \autoBeamOff \tempoQuiTollis
+      \set Score.currentBarNumber = #312
+    r4 \mvTr a'\fE^\tuttiE a2
+    f r8 f f f
+    e4 e r8 c16([ d)] e8 f16([ g)]
+    a2 gis %315
+    gis8([ a)] a([ h)] h4 a8([ gis)]
+    a1
+    gis4 a2 gis4
+    g4. g8 f8.[ g16] a4~
+    a g8[ f] e2~ %320
+    e4 d c2
+    e4. e8 dis4 e~
+    e dis8[ cis] dis2 \noBreak
+    e1\fermata \bar "||"
+    \tempoQuiTollisB R1*16 \noBreak %340
+    R1\fermata \bar "||"
+    \tempoQuiSedes R1*2
+    r4 \mvTr c\fE^\tuttiE d2
+    e8 e g4. g8 fis4 %345
+    g2 a4 g~
+    g8[ f] e2 d4 \noBreak
+    R1\fermata \bar "||"
+    \time 3/2 \newSpacingSection \tempoMiserere r2 g as \noBreak
+    fis g r %350
+    r g f!
+    e! f r
+    r f es
+    d es r
+    R1.*2 %356
+    as,2( c) es
+    as1.~
+    as1 as2
+    r g g %360
+    a!1.
+    g\fermata
+    R1.*2
+    r2 g g %365
+    as1 a2
+    \once \tieDashed g1.~
+    g
+    g\fermata \bar "||" %369 finis
+  }
+}
+
+QuiTollisAltoLyrics = \lyricmode {
+  Qui tol -- %312
+  lis pec -- ca -- ta
+  mun -- di, pec -- ca -- ta __
+  mun -- di: %315
+  Mi -- se -- re -- re __
+  no --
+  _ _ bis,
+  mi -- se -- re -- _
+  _ _ %320
+  _ re,
+  mi -- se -- re -- re __
+  _ no --
+  bis.
+
+  Qui se -- %344
+  des ad dex -- te -- ram %345
+  Pa -- _ _
+  _ tris:
+
+  Mi -- se --
+  re -- re, %350
+  mi -- se --
+  re -- re,
+  mi -- se --
+  re -- re,
+
+  mi -- se -- %357
+  re --
+  re,
+  mi -- se -- %360
+  re --
+  re,
+
+  mi -- se -- %365
+  re -- re
+  no --
+
+  bis. %369 finis
+}

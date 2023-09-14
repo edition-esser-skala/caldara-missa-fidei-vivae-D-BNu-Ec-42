@@ -96,3 +96,23 @@ GratiasTimpani = {
     c\fermata \bar "||" %180 finis
   }
 }
+
+QuiTollisTimpani = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \tempoQuiTollis
+      \set Score.currentBarNumber = #312
+    R1*12 \noBreak %323
+    R1\fermata \bar "||"
+    \tempoQuiTollisB R1*16 \noBreak %340
+    R1\fermata \bar "||"
+    \tempoQuiSedes R1*4 %345
+    r2 r4 g\fE
+    c c g r \noBreak
+    R1\fermata \bar "||"
+    \time 3/2 \newSpacingSection \tempoMiserere R1.*18 %366
+    g2 g g
+    g g g
+    c1.\fermata \bar "||" %369 finis
+  }
+}

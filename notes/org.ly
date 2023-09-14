@@ -1051,3 +1051,130 @@ DomineFiliBassFigures = \figuremode {
   <7> <6> <7> <6> <7> <6>4. %310
   <6 5>4 <4>8 <3> r2 %311 finis
 }
+
+QuiTollisOrgano = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \tempoQuiTollis
+      \set Score.currentBarNumber = #312
+    r4 \mvTr a'\fE-\tuttiE a2
+    a r8 gis gis gis
+    a4 a, r8 a' g!4
+    f2 e %315
+    R1
+    a8 g! g f f4 e8 dis
+    e1
+    cis2 d4. c8
+    h2 c %320
+    gis a
+    c h~
+    h1 \noBreak
+    e,\fermata \bar "||"
+    \tempoQuiTollisB \mvTr a8\pE-\soloE h c a e' e gis e %325
+    a, a c a d c h g! \noBreak
+    c4 c'8 a fis2
+    g gis
+    a4. h16 c dis,4. cis16 h
+    e4~ e16 fis g a h8 h, gis' e %330
+    a4. h16 c d!8 d, fis d
+    g! g h g c, c d4
+    g,8 e' c d g, a h g
+    a4. a8 h2
+    e4. fis16 g a4. ais8 %335
+    h h, r4 h r
+    h r h r
+    e a,8 h c2
+    ais h
+    e,1~-\tastoE \noBreak %340
+    e\fermata \bar "||"
+    \tempoQuiSedes \mvTr c'2\fE-\tuttiE d \noBreak
+    e4 g2 fis4
+    g8 f e4 f8 d g4
+    c,8 c'4 h8 a2 %345
+    g4 e d g
+    c,2 g \noBreak
+    R1\fermata \bar "||"
+    \time 3/2 \newSpacingSection \tempoMiserere c2 c' c \noBreak
+    c h! r %350
+    r b b
+    b a! r
+    r as as
+    as g r
+    \clef treble es'^\critnote g b %355
+    \clef "treble_8" es,2 c as
+    f as c
+    \clef bass as f d!
+    h!1.
+    r2 c1 %360
+    fis,1.
+    f\fermata
+    \clef "treble_8" r2^\critnote es''2 es
+    f( es) d!
+    es \clef bass c c %365
+    as g fis
+    g1.~
+    g
+    c,\fermata \bar "||" %369 finis
+  }
+}
+
+QuiTollisBassFigures = \figuremode {
+  r2 <6> %312
+  <4 2> r8 <7>4.
+  <9 4>4 <8 3>4. <6>8 q4
+  <7> <6> <_+>2 %315
+  r1
+  r8 <\t> <4\+ 2> <\t \t> <6>4 <6! 4>8 <7 [_+]>
+  <5 _+>4 <6 4> <5 \t> <\t _+>
+  <6 5!>2 <9>4 <8>8 <\t>
+  <7>4 <6> <9> <8> %320
+  <6 4> <5 3> <9> <8>
+  <6\\>2 <[5\+] _+>4 <6 4>
+  <5\+ \t>2 <\t _+>
+  <_+>1
+  r2 <4>8 <_+> <6>4 %325
+  <9>8 <8> <6>4. <\t>8 <6>4
+  r2 <7>4 <6>
+  <9> <8> <6>2
+  <9>4 <8> \bo <7 [_+]> \bc <6 [\t]>
+  <9\\> <8> <6 4>8 <5\+ _+> <6>4 %330
+  <9> <8> <9 _+>8 <8 \t> <6>4
+  <9>8 <8> <6>4 <6 5> <4>8 <_+>
+  r4 <6 5>8 <_+>4. <6>4
+  <9 7>4 <8 6\\>8 <7 5> \bo <9 [5\+] _+>4 \bc <8 [\t] \t>
+  <9\\> <8> <9> <8>8 <7 [_+]> %335
+  <[5\+] _+>2 <7 [5\+] _+>
+  <6 4> <5\+ _+>
+  r4 <6!>8 <7 [5\+] _+> r2
+  <6 5 [_+]> \bo <[5\+] 4>4 \bc <[\t] _+>
+  r1 %340
+  r
+  r2 <6>
+  q4 <3> <4 2> <6 5>
+  r8 <\t> <6>4 <6 5>2
+  r4. <6>8 <7>4 <6\\> %345
+  r <6> <7 [_!]>2
+  r2 <6 4>4 <5 3>
+  r1
+  <[5] _->1 <6- \t>2
+  <[6!] 4\+ _-> <6>1 %350
+  r2 <6> <5!>
+  <[4!] 2> <6>1
+  r2 <6> <5->
+  <4 2-> <6- _->1
+  r1. %355
+  <[5-]>2 <_-> <[5-]>
+  <_->2 <6> <6- _->
+  <6> <_-> <5->
+  <7->1.
+  r2 <_->1 %360
+  <7- [_!]>1.
+  <4! 2>
+  r2 \bo <[6]>1
+  <6->2 <6> <6!>
+  \bc <[6]> <_->1 %365
+  <[5-]>2 <\t> <7- [_!]>
+  <6- _!>1 <\t 4>2
+  <5 \t> <\t _!>1
+  <_!>1. %369 finis
+}

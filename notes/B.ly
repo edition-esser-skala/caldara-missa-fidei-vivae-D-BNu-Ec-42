@@ -445,3 +445,125 @@ GratiasBassoLyrics = \lyricmode {
   tu --
   am. %180 finis
 }
+
+QuiTollisBasso = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \autoBeamOff \tempoQuiTollis
+      \set Score.currentBarNumber = #312
+    r4 \mvTr a'\fE^\tuttiE a2
+    a r8 gis gis gis
+    a4 a, r8 a' g g
+    f2 e %315
+    R1
+    a8([ g!)] g([ f)] f4 e8([ dis)]
+    e2 e
+    cis4. cis8 d4. c?8
+    h4. h8 c2( %320
+    gis) a
+    c4. c8 h2
+    h h \noBreak
+    e1\fermata \bar "||"
+    \tempoQuiTollisB
+      r4 r8 \mvTr a\pE^\soloE a gis r h \noBreak %325
+    h a r a f g!16 a g8. f16
+    e8 c c' a16 g fis4. fis8
+    g2 gis4. gis8
+    a4. h16([ c)] dis,4. cis16([ h)]
+    e4~ e16[ fis g a] h8 h, r4 %330
+    a'4. h16 c d8. d,16 d4
+    g!8 g h g c, c d4
+    g, r r h'~
+    h8 c16 h a8. g16 fis4 dis8 cis16([ h)]
+    e8 e e fis16([ g)] a4. ais8 %335
+    h[ h ais h] h,[ a' gis a]
+    h,[ g' fis g] h,[ fis' e fis]
+    g[ e f dis] e4. c8
+    ais2 h
+    e, r \noBreak %340
+    R1\fermata \bar "||"
+    \tempoQuiSedes \mvTr c'2\fE^\tuttiE d \noBreak
+    e8 e g4. g8 fis4
+    g8[( f] e4 f8[ d] g4)
+    c,8 c'4( h8 a2) %345
+    g4 e d g8 g
+    c,2 g \noBreak
+    R1\fermata \bar "||"
+    \time 3/2 \newSpacingSection \tempoMiserere r2 c' c \noBreak
+    c h! r %350
+    r b b
+    b a! r
+    r as as
+    as g r
+    R1.*3 %357
+    as2( f) d!
+    h!1 h2
+    r c c' %360
+    fis,1.
+    f\fermata
+    R1.*2
+    r2 c' c %365
+    as( g) fis
+    g1.~
+    g
+    c,\fermata \bar "||" %369 finis
+  }
+}
+
+QuiTollisBassoLyrics = \lyricmode {
+  Qui tol -- %312
+  lis pec -- ca -- ta
+  mun -- di, pec -- ca -- ta
+  mun -- di: %315
+
+  Mi -- se -- re -- re __
+  no -- bis,
+  mi -- se -- re -- re,
+  mi -- se -- re -- %320
+  re,
+  mi -- se -- re --
+  re no --
+  bis.
+  Qui tol -- lis pec -- %325
+  ca -- ta, qui tol -- lis pec -- ca -- ta
+  mun -- di: Su -- sci -- pe, su -- sci --
+  pe de -- pre --
+  ca -- ti -- o -- nem
+  no -- _ stram, %330
+  su -- sci -- pe, su -- sci -- pe
+  de -- pre -- ca -- ti -- o -- nem no --
+  stram, su --
+  sci -- pe, su -- sci -- pe de -- pre --
+  ca -- ti -- o -- nem no -- _ %335
+  _ _
+  _ _
+  _ _ _
+  _ _
+  stram. %340
+
+  Qui se --
+  des ad dex -- te -- ram
+  Pa --
+  tris, Pa -- %345
+  tris, ad dex -- te -- ram
+  Pa -- tris:
+
+  Mi -- se --
+  re -- re, %350
+  mi -- se --
+  re -- re,
+  mi -- se --
+  re -- re,
+
+  mi -- se -- %358
+  re -- re,
+  mi -- se -- %360
+  re --
+  re,
+
+  mi -- se -- %365
+  re -- re
+  no --
+
+  bis. %369 finis
+}

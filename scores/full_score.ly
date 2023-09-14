@@ -326,57 +326,134 @@
   %     \midi { \tempo 4 = 100 }
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Domine Fili unigenite"
+  %   \addTocEntry
+  %   \paper {
+  %     top-system-spacing.basic-distance = #10
+  %     top-system-spacing.minimum-distance = #10
+  %     top-markup-spacing.basic-distance = #0
+  %     top-markup-spacing.minimum-distance = #0
+  %     markup-system-spacing.basic-distance = #10
+  %     markup-system-spacing.minimum-distance = #10
+  %     system-system-spacing.basic-distance = #17
+  %     system-system-spacing.minimum-distance = #17
+  %     systems-per-page = #3
+  %   }
+  %   \score { %\articulate
+  %     <<
+  %       \new Staff \with { \setStaffDistance #11 } {
+  %         \set Staff.instrumentName = \markup \center-column { "clno" "solo" }
+  %         \DomineFiliClarinoSolo
+  %       }
+  %       \new StaffGroup <<
+  %         \new GrandStaff \with { \setGroupDistance #11 #11 } <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \DomineFiliViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \DomineFiliViolinoII
+  %           }
+  %         >>
+  %       >>
+  %       \new ChoirStaff \with { \setGroupDistance #12 #13 } <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "S" "T" }
+  %           \new Voice = "Soprano" { \dynamicUp \DomineFiliSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \DomineFiliSopranoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \DomineFiliOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \DomineFiliBassFigures }
+  %     >>
+  %     \layout { \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/16) }
+  %     \midi { \tempo 4 = 80 }
+  %   }
+  % }
   \bookpart {
-    \subsection "Domine Fili unigenite"
+    \subsection "Qui tollis"
     \addTocEntry
-    \paper {
-      top-system-spacing.basic-distance = #10
-      top-system-spacing.minimum-distance = #10
-      top-markup-spacing.basic-distance = #0
-      top-markup-spacing.minimum-distance = #0
-      markup-system-spacing.basic-distance = #10
-      markup-system-spacing.minimum-distance = #10
-      system-system-spacing.basic-distance = #17
-      system-system-spacing.minimum-distance = #17
-      systems-per-page = #3
-    }
     \score { %\articulate
       <<
-        \new Staff \with { \setStaffDistance #11 } {
-          \set Staff.instrumentName = \markup \center-column { "clno" "solo" }
-          \DomineFiliClarinoSolo
-        }
         \new StaffGroup <<
-          \new GrandStaff \with { \setGroupDistance #11 #11 } <<
-            \set GrandStaff.instrumentName = "vl"
+          \new Staff \with { \smallStaffDistance } <<
+            \set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
+            \partCombine #'(0 . 10) \QuiTollisClarinoI \QuiTollisClarinoII
+          >>
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "trb"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \DomineFiliViolinoI
+              \QuiTollisTromboneI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \DomineFiliViolinoII
+              \QuiTollisTromboneII
             }
           >>
         >>
-        \new ChoirStaff \with { \setGroupDistance #12 #13 } <<
+        \new Staff {
+          \set Staff.instrumentName = "timp"
+          \QuiTollisTimpani
+        }
+        \new StaffGroup <<
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "vl"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \QuiTollisViolinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \QuiTollisViolinoII
+            }
+          >>
+        >>
+        \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = \markup \center-column { "S" "T" }
-            \new Voice = "Soprano" { \dynamicUp \DomineFiliSoprano }
+            \set Staff.instrumentName = "S"
+            \new Voice = "Soprano" { \dynamicUp \QuiTollisSoprano }
           }
-          \new Lyrics \lyricsto Soprano \DomineFiliSopranoLyrics
+          \new Lyrics \lyricsto Soprano \QuiTollisSopranoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "A"
+            \new Voice = "Alto" { \dynamicUp \QuiTollisAlto }
+          }
+          \new Lyrics \lyricsto Alto \QuiTollisAltoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "T"
+            \new Voice = "Tenore" { \dynamicUp \QuiTollisTenore }
+          }
+          \new Lyrics \lyricsto Tenore \QuiTollisTenoreLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "B"
+            \new Voice = "Basso" { \dynamicUp \QuiTollisBasso }
+          }
+          \new Lyrics \lyricsto Basso \QuiTollisBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \DomineFiliOrgano
+            \QuiTollisOrgano
           }
         >>
-        \new FiguredBass { \DomineFiliBassFigures }
+        \new FiguredBass { \QuiTollisBassFigures }
       >>
-      \layout { \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/16) }
-      \midi { \tempo 4 = 80 }
+      \layout { }
+      \midi { \tempo 4 = 50 } % 70 – 90 – 180
     }
   }
 }
