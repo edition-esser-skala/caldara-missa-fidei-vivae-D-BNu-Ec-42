@@ -214,81 +214,116 @@
   %     \midi { \tempo 4 = 100 }
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Gratias agimus tibi"
+  %   \addTocEntry
+  %   \score { %\articulate
+  %     <<
+  %       \new StaffGroup <<
+  %         \new Staff \with { \smallStaffDistance } <<
+  %           \set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
+  %           \partCombine #'(0 . 10) \GratiasClarinoI \GratiasClarinoII
+  %         >>
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "trb"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \GratiasTromboneI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \GratiasTromboneII
+  %           }
+  %         >>
+  %       >>
+  %       \new Staff {
+  %         \set Staff.instrumentName = "timp"
+  %         \GratiasTimpani
+  %       }
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \GratiasViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \GratiasViolinoII
+  %           }
+  %         >>
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \GratiasSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \GratiasSopranoLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \GratiasAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \GratiasAltoLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \GratiasTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \GratiasTenoreLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \GratiasBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \GratiasBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \GratiasOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \GratiasBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 2 = 30 } % 120
+  %   }
+  % }
   \bookpart {
-    \subsection "Gratias agimus tibi"
+    \subsection "Domine Deus"
     \addTocEntry
+    \paper {
+      system-system-spacing.basic-distance = #20
+      system-system-spacing.minimum-distance = #20
+      systems-per-page = #4
+      page-count = #3
+    }
     \score { %\articulate
       <<
-        \new StaffGroup <<
-          \new Staff \with { \smallStaffDistance } <<
-            \set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
-            \partCombine #'(0 . 10) \GratiasClarinoI \GratiasClarinoII
-          >>
-          \new GrandStaff <<
-            \set GrandStaff.instrumentName = "trb"
-            \new Staff {
-              \set Staff.instrumentName = "1"
-              \GratiasTromboneI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "2"
-              \GratiasTromboneII
-            }
-          >>
-        >>
-        \new Staff {
-          \set Staff.instrumentName = "timp"
-          \GratiasTimpani
+        \new Staff \with { \smallStaffDistance } {
+          \set Staff.instrumentName = "trb 1"
+          \DomineDeusTromboneI
         }
-        \new StaffGroup <<
-          \new GrandStaff <<
-            \set GrandStaff.instrumentName = "vl"
-            \new Staff {
-              \set Staff.instrumentName = "1"
-              \GratiasViolinoI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "2"
-              \GratiasViolinoII
-            }
-          >>
-        >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \GratiasSoprano }
-          }
-          \new Lyrics \lyricsto Soprano \GratiasSopranoLyrics
-
-          \new Staff {
             \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \GratiasAlto }
+            \new Voice = "Alto" { \dynamicUp \DomineDeusAlto }
           }
-          \new Lyrics \lyricsto Alto \GratiasAltoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \GratiasTenore }
-          }
-          \new Lyrics \lyricsto Tenore \GratiasTenoreLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \GratiasBasso }
-          }
-          \new Lyrics \lyricsto Basso \GratiasBassoLyrics
+          \new Lyrics \lyricsto Alto \DomineDeusAltoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \GratiasOrgano
+            \DomineDeusOrgano
           }
         >>
-        \new FiguredBass { \GratiasBassFigures }
+        \new FiguredBass { \DomineDeusBassFigures }
       >>
       \layout { }
-      \midi { \tempo 2 = 30 } % 120
+      \midi { \tempo 4 = 100 }
     }
   }
 }

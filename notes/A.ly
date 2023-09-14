@@ -336,3 +336,65 @@ GratiasAltoLyrics = \lyricmode {
 
   am. %180 finis
 }
+
+DomineDeusAlto = {
+  \relative c' {
+    \clef treble
+    \key f \major \time 3/4 \autoBeamOff \tempoDomineDeus
+      \set Score.currentBarNumber = #181
+    R2.*19 %199
+    \mvTr f4.\pE^\soloE g8 a4 %200
+    e f r
+    g8 a b2
+    a4 r8 a([ g)] f
+    g16[ f e8] r g[ f e]
+    f16[ e d8] r f[ e d] %205
+    g4~ g16[ g f e] f[ f e d]
+    e8 d16 c d4. c8
+    c2 r4
+    R2.*6 %214
+    a'4.( g16[ f)] g8 f16([ e)] %215
+    f8 d g a b4
+    a r8 c,([ d)] es
+    es[\trill d] r d[ e f]
+    f[\trill e] r e[ f g]
+    g[\trill f] r f g[ a16 b] %220
+    a4 g r
+    R2.
+    b4._( a16[ g] a8) g16([ f)]
+    g8([ f16 e)] f4 r
+    b4. a16[ g] a8[ g16 f] %225
+    g8[ f16 e] f2~
+    f8 g g4. f8
+    f2 r4
+    R2.*18 %246
+    R2.\fermata \bar "||" %247 finis
+  }
+}
+
+DomineDeusAltoLyrics = \lyricmode {
+  Do -- mi -- ne %200
+  De -- us,
+  Rex coe -- le --
+  stis, De -- us
+  Pa -- _
+  _ _ %205
+  _ _
+  _ ter o -- mni -- po --
+  tens.
+
+  Do -- mi -- ne %215
+  De -- us, Rex coe --
+  le -- stis, De -- us
+  Pa -- _
+  _ _
+  _ _ _ %220
+  _ ter,
+
+  De -- us
+  Pa -- ter,
+  Pa -- _ _ %225
+  _ ter __
+  o -- mni -- po --
+  tens. %228 finis
+}

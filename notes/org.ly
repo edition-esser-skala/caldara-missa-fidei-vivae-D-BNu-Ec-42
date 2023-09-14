@@ -767,3 +767,148 @@ GratiasBassFigures = \figuremode {
   <5 \t> <\t 3>
   r1 %180 finis
 }
+
+DomineDeusOrgano = {
+  \relative c {
+    \clef bass
+    \key f \major \time 3/4 \tempoDomineDeus
+      \set Score.currentBarNumber = #181
+    \mvTr f2.\fE-\soloE
+    g4 a r8 a
+    g f g4 c,
+    f8 f, f'4 r8 f
+    c' c, c'4 r8 c %185
+    c4 h8 a h4
+    c8 g e c d h
+    c a' f d g4
+    e8 c a' f g g,
+    c b! a2 %190
+    b4 h2
+    c4 cis2
+    d4 a b!
+    c!4. d8 e c
+    d4 e f %195
+    b a8 g f e
+    d4 e f
+    b a8 g f e
+    d b' c4 c,
+    f a8\pE g f4 %200
+    g f8 es d c
+    b a g4 c
+    f8 f, f'4 r8 f
+    e e, e'4 r8 e
+    d d, d'4 r8 d %205
+    c c, c'[ c' a h]
+    c a f d g g,
+    c4 c'\fE c
+    c8 h h g a h
+    c4 c,8 c' h a %210
+    g f e c' d, h'
+    c c, c'4 r
+    cis8 h a d h cis
+    d b g e a a,
+    d d, d'4\pE e %215
+    d b'8 a g c,!
+    f4 f, f'
+    b, h2
+    c4 cis2
+    d e4 %220
+    f c!8 d e c
+    d4\fE e f
+    b,8\pE c d8. e16 f4
+    b,8 c d8. e16 f4
+    b,8 c d8. e16 f4 %225
+    b a8 g f es
+    d b' c4 c,
+    f\fE a8 g f4
+    g a r8 a
+    g f g4 c, %230
+    f8 f, f'4 r8 f
+    c' c, c'4 r8 c
+    c4 h8 a h g
+    c g e c d h
+    c a' f d g4 %235
+    e8 c a' f g g,
+    c b! a2
+    b4 h2
+    c4 cis2
+    d4 a b! %240
+    c!4. d8 e c
+    d4 e f
+    b a8 g f e
+    d4 e f
+    b a8 g f e %245
+    d b c4 c,
+    f2 r4\fermata \bar "||" %247 finis
+  }
+}
+
+DomineDeusBassFigures = \figuremode {
+  r2. %181
+  <6>4 q2
+  q4 <7> q
+  r2.
+  r %185
+  <4 2>4 <6 5>2
+  r2 <6!>8 <6 5>
+  r <6> <6 5>4 <_!>
+  <6> <6 5> <_!>
+  r8 <\t> <6 5->2 %190
+  r4 <6 5>2
+  <[_!]>4 <6 5>2
+  r4 <6 [_!]>2
+  <6 4>4 <5 3>2
+  <6>4 <6 5>2 %195
+  <4 2>4 <6>2
+  q4 <6 5>2
+  <2>4 <6>2
+  r8 <6> <4>4 <3>
+  r <6>8 q4. %200
+  q2.
+  <6>8 q <7>4 q
+  r2.
+  <6>
+  <6!> %205
+  r2 <6>8 q
+  r4 <6 5> <4>8 <_!>
+  r2.
+  <2>8 <6 5>4 <[7 _!]>8 <6> <6 5>
+  r2 <6>8 <7> %210
+  <_!> <\t> <6>4 <6!>8 <6 5>
+  r2.
+  <6>4 <_+> <6>8 <6 5>
+  r4 <6 5 [_-]> <_+>
+  r2 <6\\>4 %215
+  r <6>8 q <7> q
+  r2 <7->4
+  r <6 5>2
+  <[_!]>4 <6 5>2
+  r <6! 5>4 %220
+  r2.
+  <6>4 <6 5>2
+  <6>8 <7> <6>8. <6 5>16 r4
+  <6>8 <7> <6>8. <6 5>16 r4
+  <6>8 <7> <6>8. <6 5>16 r4 %225
+  <4 2> <6>2
+  r8 <6 5> r2
+  r4 <6>2
+  q4 q2
+  q4 <7> q %230
+  r2.
+  r
+  <4 2>4 <6 5>2
+  r <6!>8 <6 5>
+  r4 <6 5> <_!> %235
+  <6> q <_!>
+  r8 <\t> <6 5->2
+  r4 <6 5>2
+  <[_!]>4 <6 5>2
+  r4 <6 [_!]>2 %240
+  <6 4>4 <5 3>2
+  <6>4 <6 5>2
+  <2>4 <6>2
+  <6>4 <6 5>2
+  <2>4 <6>2 %245
+  r8 <6> <6 4>4 <5 3>
+  r2. %247 finis
+}
