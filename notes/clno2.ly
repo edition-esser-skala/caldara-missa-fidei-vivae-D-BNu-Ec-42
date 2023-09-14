@@ -71,6 +71,59 @@ GloriaClarinoII = {
     R1*2 %16
     r8 c e c r g g g
     e4 r8 d' c4 r
-    R1\fermata \bar "||"
+    R1\fermata \bar "||" %19 finis
+  }
+}
+
+GratiasClarinoII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoGratias
+      \set Score.currentBarNumber = #111
+    R1
+    r4 d'4.\fE d8 d4 \noBreak
+    e e8 e e4 d\fermata \bar "||"
+    \twotwotime \time 2/2 \tempoGratiasB R1*10 %123
+    c2. d4
+    e2. d4 %125
+    c d e d8 c
+    f4 f e d
+    e2 r
+    d r
+    d r %130
+    d d4 d
+    e2_\critnote r
+    R1
+    e2 r
+    R1*4 %138
+    r2 e~
+    e d %140
+    d r
+    R1*4 %145
+    R1*2
+    c2 c4 c
+    c2 c4 c
+    f f g f %150
+    e2 r
+    R1*10 %161
+    R1
+    c2 c4 c
+    c2 c4 c
+    c1 %165
+    c
+    R
+    d2 d4 d
+    d2 d4 d
+    d1 %170
+    d
+    d4 d e d
+    c2 r
+    R1
+    r2 d4 d %175
+    c2 r
+    r d4 d
+    g,2 g
+    g1
+    e\fermata \bar "|| " %180 finis
   }
 }

@@ -234,3 +234,81 @@ LaudamusViolinoI = {
     a r4\fermata \bar "||" %110 finis
   }
 }
+
+GratiasViolinoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoGratias
+      \set Score.currentBarNumber = #111
+    r4 a'4.\fE a8 a4
+    r g4. g8 g4 \noBreak
+    g g8 g g4 g\fermata \bar "||"
+    \twotwotime \time 2/2 \tempoGratiasB
+      c2 c4 c \noBreak
+    c2 c4 c %115
+    c1
+    c
+    c4  c d c
+    h2. c4
+    d2. c4 %120
+    h c d2
+    e4 d c h
+    a2 h4 h
+    c2 g
+    e'2. d4 %125
+    c d e2
+    f e4 d
+    c h a2
+    g h~
+    h4 c d2~ %130
+    d4 c h2
+    R1*2
+    c2 c4 c
+    c2 c4 c %135
+    c1
+    c
+    c4 c d c
+    h2. a8 g
+    a1 %140
+    g2 r
+    d'2. c4
+    h2. a4
+    g1
+    R %145
+    e'2 e4 e
+    e2 e4 e
+    e1
+    e
+    d4 d e d %150
+    c1
+    h~
+    h4 h a2~
+    a gis
+    a a~ %155
+    a4 a g!2
+    fis1
+    e2 e'~
+    e4 d! c2~
+    c4 h a2~ %160
+    a4 h8 c d4 c
+    c2 h
+    c2. d4
+    e2. d4
+    c2. b4 %165
+    a2. a4
+    g2 r
+    d' d4 d
+    d2 d4 d
+    d1 %170
+    d
+    d4 d e d
+    c1~
+    c2 h4 a
+    h c d2 %175
+    r c4 c
+    c2 d
+    h4 h c2~
+    c h
+    c1\fermata \bar "||" %180 finis
+  }
+}

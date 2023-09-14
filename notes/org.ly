@@ -607,3 +607,163 @@ LaudamusBassFigures = \figuremode {
   r4 <6 5> <4>8 <_+>
   r2. %110 finis
 }
+
+GratiasOrgano = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \tempoGratias
+      \set Score.currentBarNumber = #111
+    r4 \mvTr f2\fE-\tuttiE f4
+    r h,2 h4 \noBreak
+    c2 g\fermata \bar "||"
+    \clef treble \twotwotime \time 2/2 \tempoGratiasB
+      c''2 c4 c \noBreak
+    c2 c4 c %115
+    c1
+    c
+    c4 c d c
+    << {
+      h2. c4
+      d2. c4 %120
+      h c d2
+      e4 d c h
+      a2 h4 h
+    } \\ {
+      g2 g4 g
+      g2 g4 g %120
+      g1
+      g
+      f4 f g f
+    } >>
+    \clef "treble_8" c2 c4 c
+    c2 c4 c %125
+    c1
+    c
+    c2 d4 c
+    \clef bass g1
+    g %130
+    g
+    g
+    f2 g4 f
+    e2 f~
+    f4 g a2~ %135
+    a4 g f2~
+    f4 g a2~
+    a4 g fis2
+    g e
+    c d %140
+    g, g'~
+    g4 a h2~
+    h4 a g2~
+    g4 a h a
+    gis1 %145
+    a
+    e
+    a
+    a
+    a %150
+    a~
+    a2 gis
+    a2 f
+    d e
+    a,1 %155
+    h~
+    h
+    e
+    r2 a~
+    a4 g f e %160
+    d2. e8 f
+    g2 g,
+    r c~
+    c4 d e2~
+    e4 d c e %165
+    f1
+    c2 h!4 a
+    g1
+    g'
+    g %170
+    g
+    g~
+    g2 a4 g
+    fis1
+    g %175
+    r2 c
+    a f
+    g1~
+    g
+    c,\fermata \bar "||" %180 finis
+  }
+}
+
+GratiasBassFigures = \figuremode {
+  r1 %111
+  r4 <6 5>2.
+  r2 <6 4>4 <5 3>
+  r1
+  r %115
+  r
+  r
+  r
+  r
+  r %120
+  r
+  r
+  r
+  r
+  r %125
+  r
+  <6 4>
+  <5 3>2 <_+>4 <\t>
+  r1
+  r %130
+  r
+  <6 4>
+  <6 5>2. <\t>4
+  <6>1
+  r2 <6> %135
+  r1
+  r2 <6>
+  r <6 5>
+  <9> <[5]>
+  <6 5> <_+> %140
+  r1
+  r2 <6>
+  r1
+  r2 <6>
+  <6 5>1 %145
+  <9>2 <8>
+  <4> <_+>
+  r1
+  r
+  <6 4> %150
+  <5 3>
+  <4 2>2 <6 5>
+  <9> <[5]>
+  <6 5> <_+>
+  <5> <6\\> %155
+  <7 [5\+] _+> <6! 4>
+  <5\+ \t> <\t _+>
+  r1
+  r
+  r %160
+  r
+  <6 4>2 <5 3>
+  r1
+  r2 <6>
+  r2. <6 5->4 %165
+  r1
+  r2 <\tllur>4 <6\\>
+  r1
+  r
+  r %170
+  r
+  <7!>
+  <6 4>2 <\t \t>
+  <6 5>1
+  r %175
+  r
+  r2 <6>
+  <5 3> <6 4>
+  <5 \t> <\t 3>
+  r1 %180 finis
+}

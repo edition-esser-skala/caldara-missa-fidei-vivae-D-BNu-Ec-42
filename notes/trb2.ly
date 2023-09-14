@@ -102,3 +102,71 @@ GloriaTromboneII = {
     R1\fermata \bar "||" %19 finis
   }
 }
+
+GratiasTromboneII = {
+  \relative c' {
+    \clef tenor
+    \key c \major \time 4/4 \tempoGratias
+      \set Score.currentBarNumber = #111
+    r4 c4.\fE c8 c4
+    r d4. d8 d4 \noBreak
+    c c8 c c4 h\fermata \bar "||"
+    \twotwotime \time 2/2 \tempoGratiasB R1*10 \noBreak %123
+    c2 c4 c
+    c2 c4 c %125
+    c1
+    c
+    c4 c d c
+    h2. c4
+    d2. c4 %130
+    h c d2
+    e4 d c2
+    c h
+    c r
+    a2. g4 %135
+    f2. g4
+    a2. h4
+    c h a2
+    R1*2 %140
+    d2 d4 d
+    d2 d4 d
+    d1
+    d
+    d4 d e d %145
+    c2. c4
+    h2 e~
+    e4 d c2~
+    c4 h a2~
+    a4 h a2~ %150
+    a4 h c2
+    d1
+    c2 c
+    h1
+    a2 c4 c %155
+    h1
+    h
+    h
+    e2. d!4
+    c2. d8 e %160
+    f2 f4 e
+    e2 d
+    c c4 c
+    c2 c4 c
+    c1 %165
+    c
+    c4 c d c
+    h2. a4
+    g2. a4
+    h2. c4 %170
+    d2. e4
+    f!1
+    e
+    d~
+    d4 c h2 %175
+    r e4 e
+    e2 d
+    d e4 e
+    d1
+    e\fermata \bar "||" %180 finis
+  }
+}

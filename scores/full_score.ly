@@ -159,59 +159,136 @@
   %     \midi { \tempo 4 = 110 }
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Laudamus te"
+  %   \addTocEntry
+  %   \paper {
+  %     top-system-spacing.basic-distance = #10
+  %     top-system-spacing.minimum-distance = #10
+  %     top-markup-spacing.basic-distance = #0
+  %     top-markup-spacing.minimum-distance = #0
+  %     markup-system-spacing.basic-distance = #10
+  %     markup-system-spacing.minimum-distance = #10
+  %     system-system-spacing.basic-distance = #17
+  %     system-system-spacing.minimum-distance = #17
+  %     systems-per-page = #3
+  %   }
+  %   \score { %\articulate
+  %     <<
+  %       \new StaffGroup \with { \setGroupDistance #11 #11 } <<
+  %         \new GrandStaff \with { \setGroupDistance #11 #11 } <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \LaudamusViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \LaudamusViolinoII
+  %           }
+  %         >>
+  %       >>
+  %       \new ChoirStaff \with { \setGroupDistance #12 #13 } <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \LaudamusSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \LaudamusSopranoLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \LaudamusBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \LaudamusBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \LaudamusOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \LaudamusBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 100 }
+  %   }
+  % }
   \bookpart {
-    \subsection "Laudamus te"
+    \subsection "Gratias agimus tibi"
     \addTocEntry
-    \paper {
-      top-system-spacing.basic-distance = #10
-      top-system-spacing.minimum-distance = #10
-      top-markup-spacing.basic-distance = #0
-      top-markup-spacing.minimum-distance = #0
-      markup-system-spacing.basic-distance = #10
-      markup-system-spacing.minimum-distance = #10
-      system-system-spacing.basic-distance = #17
-      system-system-spacing.minimum-distance = #17
-      systems-per-page = #3
-    }
     \score { %\articulate
       <<
-        \new StaffGroup \with { \setGroupDistance #11 #11 } <<
-          \new GrandStaff \with { \setGroupDistance #11 #11 } <<
-            \set GrandStaff.instrumentName = "vl"
+        \new StaffGroup <<
+          \new Staff \with { \smallStaffDistance } <<
+            \set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
+            \partCombine #'(0 . 10) \GratiasClarinoI \GratiasClarinoII
+          >>
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "trb"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \LaudamusViolinoI
+              \GratiasTromboneI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \LaudamusViolinoII
+              \GratiasTromboneII
             }
           >>
         >>
-        \new ChoirStaff \with { \setGroupDistance #12 #13 } <<
+        \new Staff {
+          \set Staff.instrumentName = "timp"
+          \GratiasTimpani
+        }
+        \new StaffGroup <<
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "vl"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \GratiasViolinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \GratiasViolinoII
+            }
+          >>
+        >>
+        \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \LaudamusSoprano }
+            \new Voice = "Soprano" { \dynamicUp \GratiasSoprano }
           }
-          \new Lyrics \lyricsto Soprano \LaudamusSopranoLyrics
+          \new Lyrics \lyricsto Soprano \GratiasSopranoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "A"
+            \new Voice = "Alto" { \dynamicUp \GratiasAlto }
+          }
+          \new Lyrics \lyricsto Alto \GratiasAltoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "T"
+            \new Voice = "Tenore" { \dynamicUp \GratiasTenore }
+          }
+          \new Lyrics \lyricsto Tenore \GratiasTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \LaudamusBasso }
+            \new Voice = "Basso" { \dynamicUp \GratiasBasso }
           }
-          \new Lyrics \lyricsto Basso \LaudamusBassoLyrics
+          \new Lyrics \lyricsto Basso \GratiasBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \LaudamusOrgano
+            \GratiasOrgano
           }
         >>
-        \new FiguredBass { \LaudamusBassFigures }
+        \new FiguredBass { \GratiasBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 100 }
+      \midi { \tempo 2 = 30 } % 120
     }
   }
 }

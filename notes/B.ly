@@ -322,3 +322,126 @@ LaudamusBassoLyrics = \lyricmode {
   ri -- fi -- ca -- mus %95
   te. %96 finis
 }
+
+GratiasBasso = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \autoBeamOff \tempoGratias
+      \set Score.currentBarNumber = #111
+    r4 \mvTr f4.\fE^\tuttiE f8 f4
+    r h,4. h8 h4 \noBreak
+    c e8 c g'4 g,\fermata \bar "||"
+    \twotwotime \time 2/2 \tempoGratiasB R1*15 %128
+    g'2 g4 g
+    g2 g4 g %130
+    g1
+    g
+    f4 f g f
+    e2 f~
+    f4 g a2~ %135
+    a4 g f2~
+    f4 g a2~
+    a4 g fis2
+    g e4 e
+    c2( d) %140
+    g, g'~
+    g4 a h2~
+    h4 a g2~
+    g4 a h a
+    gis2 gis4 gis %145
+    a1
+    e
+    a2 a4 a
+    a2 a4 a
+    a1 %150
+    a2 a~
+    a4 a gis gis
+    a2 f4 f
+    d2( e)
+    a,1 %155
+    h2 h4 h
+    h1
+    e
+    r2 a~
+    a4 g f e %160
+    d2. e8 f
+    g2 g,
+    r c~
+    c4 d e2~
+    e4 d c e %165
+    f1
+    c2 h!4( a)
+    g2 r
+    g' g4 g
+    g2 g4 g %170
+    g1
+    g
+    g4 g a g
+    fis2. fis4
+    g1 %175
+    r2 c4 c
+    a2 f
+    g g4 g
+    g1
+    c,\fermata \bar "||" %180 finis
+  }
+}
+
+GratiasBassoLyrics = \lyricmode {
+  Gra -- ti -- as, %111
+  gra -- ti -- as
+  a -- gi -- mus ti -- bi,
+
+  gra -- ti -- as %129
+  a -- gi -- mus %130
+  ti --
+  bi,
+  pro -- pter ma -- gnam
+  glo -- _
+  _ _ %135
+  _ _
+  _ _
+  ri -- am,
+  glo -- ri -- am
+  tu -- %140
+  am, glo --
+  _ _
+  _ _
+  _ _ _
+  _ ri -- am %145
+  tu --
+  am,
+  gra -- ti -- as
+  a -- gi -- mus
+  ti -- %150
+  bi, pro --
+  pter ma -- gnam
+  glo -- ri -- am
+  tu --
+  am, %155
+  glo -- ri -- am
+  tu --
+  am,
+  pro --
+  pter ma -- gnam %160
+  glo -- ri -- am
+  tu -- am,
+  glo --
+  _ _
+  _ _ _ %165
+  _
+  _ ri --
+  am,
+  gra -- ti -- as
+  a -- gi -- mus %170
+  ti --
+  bi,
+  pro -- pter ma -- gnam
+  glo -- ri --
+  am, %175
+  pro -- pter
+  ma -- gnam
+  glo -- ri -- am
+  tu --
+  am. %180 finis
+}

@@ -391,9 +391,157 @@ LaudamusSopranoLyrics = \lyricmode {
   te. %96 finis
 }
 
+GratiasSoprano = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \autoBeamOff \tempoGratias
+      \set Score.currentBarNumber = #111
+    r4 \mvTr a'4.\fE^\tuttiE a8 a4
+    r g4. g8 g4 \noBreak
+    g g8 g g4 g\fermata \bar "||"
+    \twotwotime \time 2/2 \tempoGratiasB
+      c2 c4 c \noBreak
+    c2 c4 c %115
+    c1
+    c
+    c4  c d c
+    h2. c4
+    d2. c4 %120
+    h c d2
+    e4 d c h
+    a2 h4 h
+    c2 g
+    e'2. d4 %125
+    c d e2
+    f e4 d
+    c( h a2)
+    g h~
+    h4 c d2~ %130
+    d4 c h2
+    R1*2
+    c2 c4 c
+    c2 c4 c %135
+    c1
+    c
+    c4 c d c
+    h2. a8 g
+    a1 %140
+    g2 r
+    d'2. c4
+    h2. a4
+    g1
+    R %145
+    e'2 e4 e
+    e2 e4 e
+    e1
+    e
+    d4 d e d %150
+    c1
+    h~
+    h4 h a2~
+    a gis
+    a a~ %155
+    a4 a g!2
+    fis1
+    e2 e'~
+    e4 d! c2~
+    c4 h a2~ %160
+    a4 h8[ c] d4 c
+    c2 h
+    c2. d4
+    e2. d4
+    c2. b4 %165
+    a2. a4
+    g2 r
+    d' d4 d
+    d2 d4 d
+    d1 %170
+    d
+    d4 d e d
+    c1~
+    c2 h4 a
+    h c d2 %175
+    r c4 c
+    c2 d
+    h4 h c2~
+    c h
+    c1\fermata \bar "||" %180 finis
+  }
+}
 
-% Gra -- ti -- as a -- gi -- mus ti -- bi
-% pro -- pter ma -- gnam glo -- ri -- am tu -- am,
+GratiasSopranoLyrics = \lyricmode {
+  Gra -- ti -- as, %111
+  gra -- ti -- as
+  a -- gi -- mus ti -- bi,
+  gra -- ti -- as
+  a -- gi -- mus %115
+  ti --
+  bi,
+  pro -- pter ma -- gnam
+  glo -- _
+  _ _ %120
+  _ _ _
+  _ _ _ _
+  _ ri -- am
+  tu -- am,
+  glo -- _ %125
+  _ _ _
+  _ ri -- am
+  tu --
+  am, glo --
+  _ _ %130
+  ri -- am,
+
+  gra -- ti -- as %134
+  a -- gi -- mus %135
+  ti --
+  bi,
+  pro -- pter ma -- gnam
+  glo -- ri -- am
+  tu -- %140
+  am,
+  glo -- _
+  _ ri --
+  am,
+  %145
+  gra -- ti -- as
+  a -- gi -- mus
+  ti --
+  bi,
+  pro -- pter ma -- gnam %150
+  glo --
+  _
+  ri -- am __
+  tu --
+  am, glo -- %155
+  ri -- am
+  tu --
+  am, pro --
+  pter ma --
+  gnam glo -- %160
+  _ ri -- am
+  tu -- am,
+  glo -- _
+  _ _
+  _ _ %165
+  _ ri --
+  am,
+  gra -- ti -- as
+  a -- gi -- mus
+  ti -- %170
+  bi,
+  pro -- pter ma -- gnam
+  glo --
+  _ _
+  _ ri -- am, %175
+  pro -- pter
+  ma -- gnam
+  glo -- ri -- am __
+  tu --
+  am. %180 finis
+}
+
+
 % Do -- mi -- ne De -- us, Rex coe -- le -- stis,
 % De -- us Pa -- ter o -- mni -- po -- tens,
 % Do -- mi -- ne Fi -- li u -- ni -- ge -- ni -- te, Je -- su Chri -- ste,

@@ -77,3 +77,57 @@ GloriaClarinoI = {
     R1\fermata \bar "||" %19 finis
   }
 }
+
+GratiasClarinoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoGratias
+      \set Score.currentBarNumber = #111
+    R1
+    r4 g''4.\fE g8 g4 \noBreak
+    g g8 g g2\fermata \bar "||"
+    \twotwotime \time 2/2 \tempoGratiasB R1*10 %123
+    e2. f4
+    g2. f4 %125
+    e f g f8 e
+    a4 a g f
+    g2 r
+    g r
+    g r %130
+    g g4 g
+    g2 r
+    R1
+    g2 r
+    R1*4 %138
+    r2 g~
+    g fis %140
+    g r
+    R1*4 %145
+    \pa e2. e4
+    e2 e4 e
+    e1
+    e
+    d4 d e d %150
+    c2 \pd r
+    R1*10 %161
+    \pa g'2 g4 g \pd
+    g2 g4 g
+    \pa g1
+    g %165
+    f4 f g f
+    e2 fis
+    g g~
+    g4 a h2~
+    h4 a g2 %170
+    g g \pd
+    f!4 f g f
+    e2 r
+    R1
+    r2 g4 g %175
+    e2 r
+    r f4 f
+    d2 e
+    d1
+    c\fermata \bar "||" %180 finis
+  }
+}
