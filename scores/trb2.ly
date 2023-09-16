@@ -1,19 +1,19 @@
 \version "2.24.0"
 
 \include "../definitions.ly"
-#(define option-instrument-name "vl 1")
+#(define option-instrument-name "trb 2")
 \include "score_settings/one-staff.ly"
 
 \book {
   \bookpart {
     \section "1" "Kyrie"
     \addTocEntry
-    \paper { indent = 2\cm }
+    \paper { indent = 2.5\cm systems-per-page = #7 }
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Violino I"
-          \KyrieViolinoI
+          \set Staff.instrumentName = "Trombone II"
+          \KyrieTromboneII
         }
       >>
     }
@@ -24,55 +24,37 @@
     \paper { systems-per-page = #5 }
     \score {
       <<
-        \new Staff { \GloriaViolinoI }
+        \new Staff { \GloriaTromboneII }
       >>
     }
-  }
-  \bookpart {
-    \subsection "Laudamus te"
-    \addTocEntry
-    \score {
-      <<
-        \new Staff { \LaudamusViolinoI }
-      >>
-    }
+    \tacet "subsection" "Laudamus te"
   }
   \bookpart {
     \subsection "Gratias agimus tibi"
     \addTocEntry
     \score {
       <<
-        \new Staff { \GratiasViolinoI }
+        \new Staff { \GratiasTromboneII }
       >>
     }
     \tacet "subsection" "Domine Deus"
   }
   \bookpart {
-    \subsection "Domine Fili unigenite"
-    \addTocEntry
-    \paper { systems-per-page = #7 }
-    \score {
-      <<
-        \new Staff { \DomineFiliViolinoI }
-      >>
-    }
-  }
-  \bookpart {
     \subsection "Qui tollis"
     \addTocEntry
+    \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \QuiTollisViolinoI }
+        \new Staff { \QuiTollisTromboneII }
       >>
     }
   }
   \bookpart {
     \subsection "Quoniam · Cum Sancto Spiritu"
     \addTocEntry
-    \paper { systems-per-page = #8 }
     \score {
       <<
-        \new Staff { \QuoniamViolinoI }
+        \new Staff { \QuoniamTromboneII }
       >>
     }
   }

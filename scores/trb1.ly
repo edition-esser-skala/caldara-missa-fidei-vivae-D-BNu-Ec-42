@@ -1,19 +1,19 @@
 \version "2.24.0"
 
 \include "../definitions.ly"
-#(define option-instrument-name "b")
+#(define option-instrument-name "trb 1")
 \include "score_settings/one-staff.ly"
 
 \book {
   \bookpart {
     \section "1" "Kyrie"
     \addTocEntry
-    \paper { indent = 2\cm }
+    \paper { indent = 2.5\cm systems-per-page = #7 }
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Bassi"
-          \KyrieOrgano
+          \set Staff.instrumentName = "Trombone I"
+          \KyrieTromboneI
         }
       >>
     }
@@ -24,52 +24,38 @@
     \paper { systems-per-page = #5 }
     \score {
       <<
-        \new Staff { \GloriaOrgano }
+        \new Staff { \GloriaTromboneI }
       >>
     }
-  }
-  \bookpart {
-    \subsection "Laudamus te"
-    \addTocEntry
-    \score {
-      <<
-        \new Staff { \LaudamusOrgano }
-      >>
-    }
+    \tacet "subsection" "Laudamus te"
   }
   \bookpart {
     \subsection "Gratias agimus tibi"
     \addTocEntry
     \score {
       <<
-        \new Staff { \GratiasOrgano }
+        \new Staff { \GratiasTromboneI }
       >>
     }
   }
   \bookpart {
     \subsection "Domine Deus"
     \addTocEntry
+    \paper { systems-per-page = #7 }
     \score {
       <<
-        \new Staff { \DomineDeusOrgano }
+        \new Staff { \DomineDeusTromboneI }
       >>
     }
-  }
-  \bookpart {
-    \subsection "Domine Fili unigenite"
-    \addTocEntry
-    \score {
-      <<
-        \new Staff { \DomineFiliOrgano }
-      >>
-    }
+    \tacet "subsection" "Domine Fili unigenite"
   }
   \bookpart {
     \subsection "Qui tollis"
     \addTocEntry
+    \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \QuiTollisOrgano }
+        \new Staff { \QuiTollisTromboneI }
       >>
     }
   }
@@ -78,7 +64,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \QuoniamOrgano }
+        \new Staff { \QuoniamTromboneI }
       >>
     }
   }
