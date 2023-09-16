@@ -567,3 +567,157 @@ QuiTollisBassoLyrics = \lyricmode {
 
   bis. %369 finis
 }
+
+QuoniamBasso = {
+  \relative c {
+    \clef bass
+    \key g \major \time 4/4 \autoBeamOff \tempoQuoniam
+      \set Score.currentBarNumber = #370
+    R1*7 %376
+    r2 r4 r8 \mvTr h'\fE^\tuttiE
+    c h a4 g r8 \mvTr g\pE^\soloE
+    fis4~ fis16[ g a h] e,4 a16[ g fis e]
+    d8 d g g a8. a,16 a8 \mvTr a'\fE^\tuttiE %380
+    d a d a d8. d,16 d4
+    r r8 \mvTr g\pE^\soloE a4~ a16[ g fis e]
+    fis4. e16[ d] g4~ g16[ fis e dis]
+    e4 e16([ fis)] g([ a)] h8. h,16 h8 \mvTr dis\fE^\tuttiE
+    e([ dis)] e dis e8. e16 h4 %385
+    R1*3
+    r8 \mvTr e\fE^\tuttiE dis h'16 a g8 fis16 e dis8 h'
+    g fis16([ e)] h4 e r %390
+    R1*2
+    \mvTr g8\pE^\soloE h16([ a)] g8 c, g' g, r g'
+    c h a4 g r8 g
+    c h a8. a16 g4 r %395
+    r2 r4 r8 \mvTr g\fE^\tuttiE
+    c([ g)] c g c8. c16 g4
+    R1*2
+    r2 r4 \mvTr g8\fE^\tuttiE g %400
+    c, c d4 g, r
+    R1*2 \noBreak
+    R1\fermata \bar "||"
+    \key c \major \time 3/4 \tempoCumSancto \newSpacingSection
+      \mvTr c4\fE^\tuttiE c c \noBreak %405
+    g'4. g8 g4
+    e a fis
+    g h8([ a)] g([ f)]
+    e[ d e c d e]
+    f[ e] d4 g8([ f)] %410
+    e([ d)] c4 a'8 a
+    g[ f! g e f g]
+    a[ g fis e] d4
+    e2 r4
+    R2.*2 %416
+    c4 c c
+    g'4. g8 g4
+    e a fis
+    g g8([ f)] e([ d)] %420
+    c[ h c a h c]
+    d2 d4
+    e( c d)
+    g, r e'
+    f! r d %425
+    e gis8([ fis)] e([ d)]
+    c[ h c a h c]
+    d[ c] h4 e8([ d)]
+    c([ h)] a4 r
+    R2.*3 %432
+    a4 a a
+    e'4. e8 e4
+    c f! d %435
+    e e8([ d)] c([ h)]
+    c a e'2
+    a,4 r a'
+    h r g!
+    a r f %440
+    g r r
+    c, c c
+    f4. f8 f4
+    e a fis
+    g g8([ f)] e([ d)] %445
+    e8[ d e c d e]
+    f[ e] d4 g8([ f)]
+    e([ d)] c4 r
+    g' g, r
+    g' a r %450
+    f g r
+    e8[ d e c d e]
+    f4 g2
+    c4 r g
+    c, r r\fermata \bar "|." %455 finis
+  }
+}
+
+QuoniamBassoLyrics = \lyricmode {
+  Tu %377
+  so -- lus san -- ctus, tu
+  so -- _ _
+  _ lus, so -- lus Do -- mi -- nus, tu %380
+  so -- lus, so -- lus Do -- mi -- nus,
+  tu so --
+  _ _ _
+  _ lus al -- tis -- si -- mus, tu
+  so -- lus al -- tis -- si -- mus, %385
+
+  tu so -- lus al -- tis -- si -- mus, Je -- su, %389
+  Je -- su Chri -- ste. %390
+
+  Quo -- ni -- am tu so -- lus, tu %393
+  so -- lus san -- ctus, tu
+  so -- lus Do -- mi -- nus, %395
+  tu
+  so -- lus al -- tis -- si -- mus,
+
+  Je -- su, %400
+  Je -- su Chri -- ste.
+
+  Cum San -- cto %405
+  Spi -- ri -- tu
+  in glo -- ri --
+  a De -- i __
+  Pa --
+  _ _ tris, %410
+  a -- men, De -- i
+  Pa --
+  _ _
+  tris,
+
+  cum San -- cto %417
+  Spi -- ri -- tu
+  in glo -- ri --
+  a De -- i __ %420
+  Pa --
+  _ tris,
+  a --
+  men, a --
+  men, a -- %425
+  men, De -- i __
+  Pa --
+  _ _ tris,
+  a -- men,
+
+  cum San -- cto %433
+  Spi -- ri -- tu
+  in glo -- ri -- %435
+  a De -- i __
+  Pa -- tris, a --
+  men, a --
+  men, a --
+  men, a -- %440
+  men,
+  cum San -- cto
+  Spi -- ri -- tu
+  in glo -- ri --
+  a De -- i __ %445
+  Pa --
+  _ _ tris,
+  a -- men,
+  a -- men,
+  a -- men, %450
+  a -- men,
+  a --
+  _ _
+  men, a --
+  men. %455 finis
+}

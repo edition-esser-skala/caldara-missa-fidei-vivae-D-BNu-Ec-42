@@ -20,6 +20,8 @@ tempoQuiTollis = \tempoMarkup "Grave"
   tempoQuiTollisB = \tempoMarkup "Andante"
   tempoQuiSedes = \tempoMarkup "Andante"
   tempoMiserere = \tempoMarkup "Largo"
+tempoQuoniam = \tempoMarkup "Allegro"
+  tempoCumSancto = \tempoMarkup "Allegro"
 
 
 \include "notes/clno1.ly"

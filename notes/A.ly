@@ -487,3 +487,158 @@ QuiTollisAltoLyrics = \lyricmode {
 
   bis. %369 finis
 }
+
+QuoniamAlto = {
+  \relative c' {
+    \clef treble
+    \key g \major \time 4/4 \autoBeamOff \tempoQuoniam
+      \set Score.currentBarNumber = #370
+    R1*7 %376
+    r2 r4 r8 \mvTr g'\fE^\tuttiE
+    g g fis4 g8 \mvTr g\pE^\soloE e4~
+    e16[ fis g a] d,4~ d16[ e fis g] cis,8[ d16 e]
+    fis8[ g16 a] g8 fis e8. e16 e8 \mvTr a\fE^\tuttiE %380
+    a a a a a8. a16 a4
+    r r8 \mvTr g\pE^\soloE e[ fis16 g] a4~
+    a16[ g fis e] fis8[ g16 a] h[ a g fis] g[ a h a]
+    g4 g8 g g8. fis16 fis8 \mvTr fis\fE^\tuttiE
+    g([ fis)] g fis g8. g16 fis4 %385
+    \mvTr h8\pE^\soloE a gis4 a fis8 h
+    ais4 h r h~
+    h8 a16([ g)] a4. g8 fis4
+    e8 \mvTr g\fE^\tuttiE fis fis16 fis g8 g16 g fis8 fis
+    g g fis4 e r %390
+    R1*2
+    \mvTr g8.\pE^\soloE g16 g8 g g g r g
+    g16([ fis)] g8 g([ fis)] g4 r8 g
+    g16([ fis)] g8 g fis g4 r %395
+    r2 r4 r8 \mvTr g\fE^\tuttiE
+    g4 g8 g g8. g16 g4
+    r2 \mvTr a8[\pE^\soloE g16 fis] g8[ fis16 e]
+    fis[ g a h] e,[ fis g a] d,8[ e16 fis] g4~
+    g8 a fis4 g \mvTr d8\fE^\tuttiE d %400
+    e e d4 d r
+    R1*2 \noBreak
+    R1\fermata \bar "||"
+    \key c \major \time 3/4 \tempoCumSancto \newSpacingSection
+      R2.*6 %410
+    \mvTr c4\fE^\tuttiE c c
+    g'4. g8 g4
+    e a fis
+    g h8([ a)] g([ f)]
+    e[ d e c d e] %415
+    f[ e] d4 g8([ f)]
+    e([ d)] c4 r
+    d d d
+    g8 f e4 a
+    d,8 c h4 g'~ %420
+    g e a
+    fis8[ e fis d e fis]
+    g g g4( fis)
+    g r r
+    R2. %425
+    e4 e e
+    a4. a8 a4
+    fis h gis
+    a c8([ h)] a4
+    gis8[ fis gis e fis gis] %430
+    a[ g?] fis4 h8[( a])
+    gis([ fis)] e2
+    e4 e2
+    e8[ fis gis e fis gis]
+    a4. g8 f4 %435
+    e8[ fis] gis4 a8[ h]
+    a2 gis4
+    a r a
+    g! r g
+    e r f( %440
+    d) g r
+    g g g
+    a4. f8 g4
+    g c a
+    h h8([ a)] g4 %445
+    g8[ f g e f g]
+    f4. e8 d4
+    e( g8[ f)] e4
+    d d r
+    g e r %450
+    f d r
+    g8[ f g e f g]
+    a4 g2
+    g4 r g
+    g r r\fermata \bar "|." %455 finis
+  }
+}
+
+QuoniamAltoLyrics = \lyricmode {
+  Tu %377
+  so -- lus san -- ctus, tu so --
+  _ _
+  _ _ lus Do -- mi -- nus, tu %380
+  so -- lus, so -- lus Do -- mi -- nus,
+  tu so -- _
+  _ _ _
+  _ lus al -- tis -- si -- mus, tu
+  so -- lus al -- tis -- si -- mus, %385
+  Je -- su, Je -- su, Je -- su,
+  Je -- su, Je --
+  su, Je -- su Chri --
+  ste, tu so -- lus al -- tis -- si -- mus, Je -- su,
+  Je -- su Chri -- ste. %390
+
+  Quo -- ni -- am tu so -- lus, tu %393
+  so -- lus san -- ctus, tu
+  so -- lus Do -- mi -- nus, %395
+  tu
+  so -- lus al -- tis -- si -- mus,
+  Je -- _
+  _ _ _ _
+  su Chri -- ste, Je -- su, %400
+  Je -- su Chri -- ste.
+
+  Cum San -- cto %411
+  Spi -- ri -- tu
+  in glo -- ri --
+  a De -- i __
+  Pa -- %415
+  _ _ tris,
+  a -- men,
+  cum San -- cto
+  Spi -- ri -- tu in
+  glo -- ri -- a De -- %420
+  _ i
+  Pa --
+  _ tris, a --
+  men,
+  %425
+  cum San -- cto
+  Spi -- ri -- tu
+  in glo -- ri --
+  a De -- i
+  Pa -- %430
+  _ _ tris,
+  a -- men,
+  De -- i
+  Pa --
+  _ _ tris, %435
+  a -- _ _
+  _ _
+  men, a --
+  men, a --
+  men, a -- %440
+  men,
+  cum San -- cto
+  Spi -- ri -- tu
+  in glo -- ri --
+  a De -- i %445
+  Pa --
+  _ _ tris,
+  De -- i
+  Pa -- tris,
+  a -- men, %450
+  a -- men,
+  a --
+  _ _
+  men, a --
+  men. %455 finis
+}

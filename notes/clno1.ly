@@ -189,3 +189,49 @@ QuiTollisClarinoI = {
     e1.\fermata \bar "||" %369 finis
   }
 }
+
+QuoniamClarinoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoQuoniam
+      \set Score.currentBarNumber = #370
+    R1*7 %376
+    r2 r4 \pa g''\fE
+    g8 g fis16 g e fis g fis g8 \pd r4
+    R1*17 %395
+    r2 r4 r8 g\fE
+    g16 a g a g a g a g a g a g4
+    R1*2
+    r2 r4 g8\fE g %400
+    a g fis4 g r
+    R1*2 \noBreak
+    R1\fermata \bar "||"
+    \key c \major \time 3/4 \tempoCumSancto \newSpacingSection
+      R2.*12 %416
+    e4\fE g8 f e4
+    g g g
+    g r r
+    g g g %420
+    g e a
+    fis8 e fis d e fis
+    g4 g fis
+    g g g
+    R2.*13 %437
+    \pa r4 a f
+    r g e
+    r f d %440
+    d r r
+    R2.
+    c4 f d \pd
+    e r r
+    R2.*3 %447
+    e4 \pa g8 f e f \pd
+    g4 r g
+    g e r %450
+    f d r
+    g8 f g e f g
+    a4 g4. f8
+    e d e c d4
+    c r r\fermata \bar "|." %455 finis
+  }
+}

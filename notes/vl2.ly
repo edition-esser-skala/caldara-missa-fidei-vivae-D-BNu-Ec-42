@@ -410,10 +410,97 @@ QuiTollisViolinoII = {
     d1.\trill\fermata
     r2 es es
     f( es) d
-    \parOn es-\parenthesize-! es-! es-!
+    \parOn es-\parenthesize-! es-! es-! %365
     es-! es-! es-!
     es-! es-! \parOff es-\parenthesize-!
     d d d
-    e!1.\fermata \bar "||"
+    e!1.\fermata \bar "||" %369 finis
+  }
+}
+
+QuoniamViolinoII = {
+  \relative c' {
+    \clef treble
+    \key g \major \time 4/4 \tempoQuoniam
+      \set Score.currentBarNumber = #370
+    h'8\fE g16 a h8 c c h r d
+    c c c16 h c d h c d8 e4~
+    e8 a, d4. e8 cis4
+    d h16 g h g a4~ a16 h c d
+    g,4~ g16 a h c fis,4~ fis16 g a h
+    e,4 c' h8 a16 g a4 %375
+    g r r2
+    r r4 r8 d'\fE
+    e d c16 h c d h4 r
+    R1
+    r2 r4 r8 cis\fE %380
+    d cis d cis d16 d fis a d d, fis a
+    d,4 r r2
+    R1
+    r2 r4 r8 fis\fE
+    g fis g fis g16 g fis e dis cis h8 %385
+    R1*3
+    r4 r8 dis\fE e e, r dis'
+    e16 h e4 dis8 e4 c~ %390
+    c16 d e fis h,4~ h16 c d e a,4~
+    a16 h c d g,8 g g4\trill fis
+    r2 r16 g\pE h d g4
+    r2 r16 g, h d g4
+    r2 r16 g, h d g4 %395
+    r2 r4 r8 h,\fE
+    c h c h c8. c16 h4
+    R1*2
+    r2 r4 h8\fE h %400
+    c16 d e8 a, d h4. a16 g
+    a4~ a16 h c d g,4~ g16 a h c
+    fis,4~ fis16 g a h e,4 c'8 h16 a
+    h8 a16 g a4 g r\fermata \bar "||"
+    \key c \major \time 3/4 \tempoCumSancto \newSpacingSection
+      R2.*6 %410
+    c,4\fE c c
+    g'4. g8 g4
+    e a fis
+    g h8 a g f
+    e d e c d e %415
+    f e d4 g8 f
+    e d c4 r
+    d d d
+    g8 f e4 a
+    d,8 c h4 g'~ %420
+    g e a
+    fis8 e fis d e fis
+    g g g4 fis
+    g r r
+    R2. %425
+    e4 e e
+    a4. a8 a4
+    fis h gis
+    a c8 h a4
+    gis8 fis gis e fis gis %430
+    a g? fis4 h8 a
+    gis fis e2
+    e4 e2
+    e8 fis gis e fis gis
+    a4. g8 f4 %435
+    e8 fis gis4 a8 h
+    a2 gis4
+    a r a
+    g! r g
+    e r f %440
+    d g r
+    g g g
+    a4. f8 g4
+    g c a
+    h h8 a g4 %445
+    g8 f g e f g
+    f4. e8 d4
+    e g8 f e4
+    d d r
+    g e r %450
+    f d r
+    g8 f g e f g
+    a4 g2
+    g4 r g
+    g r r\fermata \bar "|." %455 finis
   }
 }

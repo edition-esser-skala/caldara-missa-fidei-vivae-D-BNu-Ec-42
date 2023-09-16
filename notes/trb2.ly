@@ -221,3 +221,79 @@ QuiTollisTromboneII = {
     e!\fermata \bar "||" %369 finis
   }
 }
+
+QuoniamTromboneII = {
+  \relative c' {
+    \clef tenor
+    \key g \major \time 4/4 \tempoQuoniam
+      \set Score.currentBarNumber = #370
+    R1*7 %376
+    r2 r4 r8 d\fE
+    c g c4 d r
+    R1
+    r2 r4 r8 e\fE %380
+    fis e fis e fis8. fis16 fis4
+    R1*2
+    r2 r4 r8 h,\fE
+    g h g-\critnote h e8. e16 dis4 %385
+    R1*3
+    r8 e\fE h dis e e fis dis
+    e16 h e4 dis8 e4 r %390
+    R1*5 %395
+    r2 r4 r8 d\fE
+    e d e d e8. e16 d4
+    R1*2
+    r2 r4 h8\fE h %400
+    c h a4 h r
+    R1*2 \noBreak
+    R1\fermata \bar "||"
+    \key c \major \time 3/4 \tempoCumSancto \newSpacingSection
+      R2.*3 %407
+    g4\fE g g
+    c4. c8 c4
+    a d h %410
+    c e8 d c4
+    h8 a h g a h
+    c h a4 d8 c
+    h a g4 e'8 d
+    c h c a h c %415
+    d c h a g4~
+    g r r
+    R2.*2
+    g4 g g %420
+    c8 c c4 c
+    a8 g a fis g a
+    g g e' e d4
+    d h c
+    r a h %425
+    gis gis gis
+    c4. c8 c4
+    a d h
+    c2 r4
+    R2.*2 %431
+    e,4 e e
+    a4. a8 a4
+    gis4 e' h
+    c c d %435
+    h8 a gis fis e d
+    e e' e2
+    e4 r c
+    d r h
+    c r r %440
+    g g g
+    c4. c8 c4
+    a d h
+    c r r
+    R2. %445
+    r4 c8 b a g
+    a g a f g a
+    g2.
+    g2 r4
+    h! c r %450
+    a h r
+    e2.
+    d
+    e4 r h
+    c r r\fermata \bar "|." %455 finis
+  }
+}

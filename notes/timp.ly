@@ -116,3 +116,39 @@ QuiTollisTimpani = {
     c1.\fermata \bar "||" %369 finis
   }
 }
+
+QuoniamTimpani = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \tempoQuoniam
+      \set Score.currentBarNumber = #370
+    R1*7 %376
+    r2 r4 r8 g\fE
+    c g c4 g r
+    R1*17 %395
+    r2 r4 r8 g\fE
+    c g c g c8. c16 g4
+    R1*2
+    r2 r4 g8\fE g %400
+    c4 r g r
+    R1*2 \noBreak
+    R1\fermata \bar "||"
+    \key c \major \time 3/4 \tempoCumSancto \newSpacingSection
+      R2.*12 %416
+    c4\fE c c
+    g4. g8 g4
+    c r r
+    g g g %420
+    c r r
+    R2.*2
+    g4 g c
+    R2.*23 %447
+    c4 c c
+    g r r
+    R2.*2 %451
+    c4 c c
+    c g2
+    c4 c g
+    c r r\fermata \bar "|." %455 finis
+  }
+}

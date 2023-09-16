@@ -749,7 +749,151 @@ QuiTollisSopranoLyrics = \lyricmode {
   bis. %369 finis
 }
 
+QuoniamSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \major \time 4/4 \autoBeamOff \tempoQuoniam
+      \set Score.currentBarNumber = #370
+    R1*6 %375
+    \mvTr d'8\pE^\soloE h16([ c)] d8 e^\critnote e d r d
+    e d c4 h r8 \mvTr d\fE^\tuttiE
+    e d c4 h r8 \mvTr h\pE^\soloE
+    a4~ a16[ h c d] g,4~ g16[ a h cis]
+    d8[ e16 fis] e8 d cis8. h16 a8 \mvTr cis\fE^\tuttiE %380
+    d cis d cis d8. d16 d4
+    r8 \mvTr d\pE^\soloE e4~ e16[ d c! h] c4~
+    c8[ d16 e] d4~ d16[ c h a] h4~
+    h8[ cis16 dis] e8 e e8. dis16 dis8 \mvTr h\fE^\tuttiE
+    h16([ c h c)] h([ c)] h([ c)] h8. h16 h4 %385
+    r \mvTr e8\pE^\soloE d! cis4 d
+    cis8 fis dis4 e r
+    c4. h16([ a)] h8 e dis4
+    e8 \mvTr h\fE^\tuttiE h h16 h h8 h16 h h8 h
+    h h h4 h r %390
+    R1*2
+    \mvTr d8\pE^\soloE h16([ c)] d8 e e d r d
+    e d c4 h r8 d
+    e d c8. c16 h4 r8 d %395
+    e([ d)] e d e8. e16 d8 \mvTr h\fE^\tutti
+    c([ h)] c h c8. c16 h4
+    \mvTr e8[\pE^\solo d16 c] d8[ c16 h] c[ d e fis] h,[ c d e]
+    a,8 d4 c8 c([ h16 a] h8) e
+    a,2 h4 \mvTr g8\fE^\tuttiE g %400
+    a g fis4 g r
+    R1*2 \noBreak
+    R1\fermata \bar "||"
+    \key c \major \time 3/4 \tempoCumSancto \newSpacingSection
+      R2.*9 %413
+    \mvTr g4\fE^\tuttiE g g
+    c4. c8 c4 %415
+    a d h
+    c e8([ d)] c4
+    h8[ a h g a h]
+    c[ h] a4 d8[( c)]
+    h([ a)] g4 h8 h %420
+    e[ d e c d e]
+    d2.
+    h4 a2
+    g4 d' e
+    r c( d) %425
+    h r r
+    R2.*2
+    a4 a a
+    e'4. e8 e4 %430
+    cis fis dis
+    e e8([ d)] c([ h)]
+    c[ h c a h c]
+    h[ a h gis a h]
+    e,4 a h %435
+    gis8[ a] h4 c8[ d]
+    c4 h2
+    a4 e' f
+    r d e
+    r c d %440
+    h h h
+    e4. e8 e4
+    c f d
+    e r r
+    g, g g %445
+    c4. c8 c4
+    a d h!
+    c e8([ d)] c4
+    h8([ a)] g4 d'
+    e r c %450
+    d r h
+    c g c~
+    c h2
+    c4 r d
+    e r r\fermata \bar "|." %455 finis
+  }
+}
 
-% Quo -- ni -- am tu so -- lus san -- ctus, tu so -- lus Do -- mi -- nus,
-% tu so -- lus al -- tis -- si -- mus, Je -- su Chri -- ste.
-% Cum San -- cto Spi -- ri -- tu in glo -- ri -- a De -- i Pa -- tris, a -- men.
+QuoniamSopranoLyrics = \lyricmode {
+  Quo -- ni -- am tu so -- lus, tu %376
+  so -- lus san -- ctus, tu
+  so -- lus san -- ctus, tu
+  so -- _
+  _ _ lus Do -- mi -- nus, tu %380
+  so -- lus, so -- lus Do -- mi -- nus,
+  tu so -- _
+  _ _
+  lus al -- tis -- si -- mus, tu
+  so -- lus al -- tis -- si -- mus, %385
+  Je -- su, Je -- su,
+  Je -- su Chri -- ste,
+  Je -- su, Je -- su Chri --
+  ste, tu so -- lus al -- tis -- si -- mus, Je -- su,
+  Je -- su Chri -- ste. %390
+
+  Quo -- ni -- am tu so -- lus, tu %393
+  so -- lus san -- ctus, tu
+  so -- lus Do -- mi -- nus, tu %395
+  so -- lus al -- tis -- si -- mus, tu
+  so -- lus al -- tis -- si -- mus,
+  Je -- _ _ _
+  _ _ su, Je -- su
+  Chri -- ste, Je -- su, %400
+  Je -- su Chri -- ste.
+
+  Cum San -- cto %414
+  Spi -- ri -- tu %415
+  in glo -- ri --
+  a De -- i
+  Pa --
+  _ _ tris,
+  a -- men, De -- i %420
+  Pa --
+  _
+  tris, a --
+  men, a -- men,
+  a -- %425
+  men,
+
+  cum San -- cto %429
+  Spi -- ri -- tu %430
+  in glo -- ri --
+  a De -- i __
+  Pa --
+  _
+  _ _ tris, %435
+  a -- _ _
+  _ _
+  men, a -- men,
+  a -- men,
+  a -- men, %440
+  cum San -- cto
+  Spi -- ri -- tu
+  in glo -- ri --
+  a,
+  cum San -- cto %445
+  Spi -- ri -- tu
+  in glo -- ri --
+  a De -- i
+  Pa -- tris, a --
+  men, a -- %450
+  men, a --
+  _ _ _
+  _
+  men, a --
+  men. %455 finis
+}
